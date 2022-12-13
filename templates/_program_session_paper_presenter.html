@@ -1,0 +1,19 @@
+<div class="session-paper">
+    <div class="paper-title">
+        {% if p['Length'] == '25' %}
+        
+        {% else %}
+        <span class="badge bg-info" title="Short Presentation">S</span>
+        {% endif %}
+
+        {% if p['Virtual'] == 'Virtual' %}
+        <span class="badge bg-virtual" title="Virtual Presentation">V</span>
+        {% else %}
+        {% endif %}
+
+        {{ p['Title'] }}
+    </div>
+    <div class="paper-authors">
+        {{ p['Presenter'] }}
+    </div>
+</div>

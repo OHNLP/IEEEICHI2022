@@ -1,0 +1,253 @@
+<h2 class="mt-5">
+    Monday, June 13
+</h2>
+{% if show_calendar %}
+
+<table id="program_table_day_3"
+    class="program-table">
+<tr>
+    <th width="70px">&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+</tr><tr>
+    <td class="td-time">
+        <div class="time time-top">
+            7:30 AM
+        </div>
+        <div class="time time-bottom">
+            8:45 AM
+        </div>
+    </td>
+    <td class="td-slot">
+        <div class="slot slot-break">
+            Registration @Ballroom 1
+            <br>
+            Breakfast @Ballroom 3
+        </div>
+    </td>
+    <td class="td-slot">
+        <div onclick="show_session_info('v-1')" 
+            class="slot slot-session slot-session-v">
+            Virtual Special Session
+            <br>
+            @zoom
+        </div>
+    </td>
+    <td class="td-slot">
+        <div onclick="show_session_info('k-p3')" 
+            class="slot slot-session slot-session-k">
+            Women in Healthcare Informatics 
+            <br>
+            @Suite 109
+        </div>
+    </td>
+</tr>
+<tr>
+    <td class="td-time">
+        <div class="time time-bottom time-bottom-down">
+            9:00 AM
+        </div>
+    </td>
+    <td colspan="3" class="td-slot">
+        <div class="slot slot-blank-break">
+            &nbsp;
+        </div>
+    </td>
+</tr>
+<tr>
+    <td class="td-time">
+        <div class="time time-line">
+            &nbsp;
+        </div>
+        <div class="time time-bottom time-bottom-down">
+            10:00 AM
+        </div>
+    </td>
+    <td colspan="3" class="td-slot">
+        <div onclick="show_session_info('k-3')" 
+            class="slot slot-large slot-session slot-session-k">
+            {% include '_program_cme_icon.html' %}
+            <span class="txt-sm">
+                Keynote:
+            </span>
+            <span>
+                Designing Health IT to Support Team Cognition and Clinical Work: A Human Factors and Socio-Technical Systems Approach
+            </span>
+            <br>
+            <span>
+                Dr. Ayse P. Gurses
+            </span>
+            <br>
+            @Ballroom 2
+        </div>
+    </td>
+</tr>
+<tr>
+    <td class="td-time">
+        <div class="time time-bottom time-bottom-down">
+            10:30 AM
+        </div>
+    </td>
+    <td colspan="3" class="td-slot">
+        <div class="slot slot-break">
+            <i class="fas fa-coffee"></i>
+            Coffee Break @Ballroom 1
+        </div>
+    </td>
+</tr>
+<tr>
+    <td class="td-time">
+        <div class="time time-line">
+            &nbsp;
+        </div>
+        <div class="time time-bottom time-bottom-down">
+            12:00 PM
+        </div>
+    </td>
+    <td class="td-slot">
+        <div onclick="show_session_info('a-5')" class="slot slot-small slot-session slot-session-a">
+            {% include '_program_cme_icon.html' %}
+            <span class="txt-sm">
+                Analytics A5
+            </span>
+            <br>
+            <b>Prediction &amp; Classification</b>
+            <br>
+            <span class="session-loc">@Suite 109</span>
+        </div>
+    </td>
+    <td class="td-slot">
+        <div onclick="show_session_info('s-2')" class="slot slot-small slot-session slot-session-s">
+            {% include '_program_cme_icon.html' %}
+            <span class="txt-sm">
+                Systems S2
+            </span>
+            <br>
+            <b>Wearables &amp; Monitoring</b>
+            <br>
+            <span class="session-loc">@Suite 110</span>
+        </div>
+    </td>
+    <td class="td-slot">
+        <div onclick="show_session_info('h-2')" class="slot slot-small slot-session slot-session-h">
+            {% include '_program_cme_icon.html' %}
+            <span class="txt-sm">
+                Human Factors H2
+            </span>
+            <br>
+            <b>Self Management</b>
+            <br>
+            <span class="session-loc">@Suite 111</span>
+        </div>
+    </td>
+</tr>
+<tr>
+    <td class="td-time">
+        <div class="time time-bottom time-bottom-down">
+            1:00 PM
+        </div>
+    </td>
+    <td colspan="3" class="td-slot">
+        <div class="slot slot-break">
+            <i class="fas fa-utensils"></i> 
+            Lunch @Ballroom 3
+        </div>
+    </td>
+</tr>
+<tr>
+    <td class="td-time">
+        <div class="time time-line">
+            &nbsp;
+        </div>
+        <div class="time time-bottom time-bottom-down">
+            2:30 PM
+        </div>
+    </td>
+    <td class="td-slot">
+        <div onclick="show_session_info('a-6')" class="slot slot-small slot-session slot-session-a">
+            {% include '_program_cme_icon.html' %}
+            <span class="txt-sm">
+                Analytics A6
+            </span>
+            <br>
+            <b>Event Prediction</b>
+            <br>
+            <span class="session-loc">@Suite 109</span>
+        </div>
+    </td>
+    <td class="td-slot">
+        <div onclick="show_session_info('a-7')" class="slot slot-small slot-session slot-session-a">
+            {% include '_program_cme_icon.html' %}
+            <span class="txt-sm">
+                Analytics A7
+            </span>
+            <br>
+            <b style="font-stretch: semi-condensed;">Visualization &amp; Explainable AI</b>
+            <br>
+            <span class="session-loc">@Suite 110</span>
+        </div>
+    </td>
+    <td class="td-slot">
+        <div onclick="show_session_info('h-3')" class="slot slot-small slot-session slot-session-h">
+            {% include '_program_cme_icon.html' %}
+            <span class="txt-sm">
+                Human Factors H3
+            </span>
+            <br>
+            <b>AI-based Applications</b>
+            <br>
+            <span class="session-loc">@Suite 111</span>
+        </div>
+    </td>
+</tr>
+<tr>
+    <td class="td-time">
+        <div class="time time-bottom time-bottom-down">
+            3:00 PM
+        </div>
+    </td>
+    <td colspan="3" class="td-slot">
+        <div class="slot slot-break">
+            <i class="fas fa-coffee"></i>
+            Coffee Break @Ballroom 1
+        </div>
+    </td>
+</tr>
+<tr>
+    <td class="td-time">
+        <div class="time time-line">
+            &nbsp;
+        </div>
+        <div class="time time-bottom">
+            4:00 PM
+        </div>
+    </td>
+    <td colspan="3" class="td-slot">
+        <div onclick="show_session_info('p-1')" class="slot slot-large slot-session slot-session-p">
+            Poster Session
+            <br>
+            
+            <br>
+            @Ballroom 1
+        </div>
+    </td>
+</tr>
+<tr>
+    <td class="td-time">
+        <div class="time time-top time-top-down">
+            6:00 PM
+        </div>
+    </td>
+    <td colspan="3" class="td-slot">
+        <div class="slot slot-large slot-session slot-session-0">
+            Reception (Sponsored by Mayo Clinic Department of AI&I)
+            <br>
+            @Art Center
+        </div>
+    </td>
+</tr>
+</table>
+
+{% endif %}
+

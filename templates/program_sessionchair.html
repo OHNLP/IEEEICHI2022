@@ -1,0 +1,107 @@
+{% extends '_layout.html' %}
+
+{% block title %}
+Program for Session Chairs
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="position-relative overflow-hidden pt-5 mb-5 text-center bg-light cover-image"
+    style="background-image: url('./static/image/rst-4.jpg');">
+    <div class="col-md-10 p-lg-5 mx-auto my-5 text-white min-height-12">
+        <h1 class="pt-5 display-4 fw-bold">
+            PROGRAM FOR SESSION CHAIRS
+        </h1>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+</div>
+
+<style>
+.table-ss {
+    width: 720px;
+}
+.table-ss th {
+    text-align: center;
+}
+.table-ss td {
+    font-size: 1em;
+}
+</style>
+<div class="container">
+
+    <div class="col-md-10 p-lg-5 mb-5 mx-auto min-height-10 ">
+
+        <div class="row mb-5">
+            <p>
+                <button onclick="selectText('tables_for_ss')">
+                    Select All
+                </button>
+            </p>
+            <div id="tables_for_ss" class="col">
+                {% for d in ds %}
+                <!-- <h3>
+                    {{ d[0] }}
+                </h3> -->
+                {% for s in d[1] %}
+                <h4>
+                    <span style="font-size: 0.9em;">
+                        {{ d[0] }},
+                        {{ session_dict[s][0]['Time'] }}
+                        @{{ session_dict[s][0]['Room'] }}
+                    </span>
+                    <br>
+                    {{ session_codename[s[0]] }} {{ s[2] }}: {{ session_dict[s][0]['Session'] }}
+                </h4>
+                <table class="table table-ss">
+                    <tr>
+                        <th width="65%">Title</th>
+                        <th width="15%">Speaker</th>
+                        <th width="10%">Is<br>Virtual</th>
+                        <th width="10%">Length</th>
+                    </tr>
+                    {% for p in session_dict[s] %}
+                    <tr>
+                        <td>
+                            <b>{{ p['Title'] }}</b>
+                        </td>
+                        <td style="text-align: center;">
+                            {{ p['Presenter'] }}
+                        </td>
+                        <td style="text-align: center;">
+                            {{ p['Virtual'] }}
+                        </td>
+                        <td style="text-align: center;">
+                            {{ p['Length'] }} mins
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                {% endfor %}
+                
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function selectText(containerid) {
+    if (document.selection) { // IE
+        var range = document.body.createTextRange();
+        range.moveToElementText(document.getElementById(containerid));
+        range.select();
+    } else if (window.getSelection) {
+        var range = document.createRange();
+        range.selectNode(document.getElementById(containerid));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+    }
+}
+</script>
+{% endblock %}

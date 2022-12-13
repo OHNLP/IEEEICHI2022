@@ -1,0 +1,133 @@
+<h2 class="mt-5">
+    Tuesday, June 14
+</h2>
+{% if show_calendar %}
+<table id="program_table_day_4"
+    class="program-table mb-4">
+<tr>
+    <th width="70px">&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+</tr>
+<tr>
+    <td class="td-time">
+        <div class="time">
+            7:30 AM
+        </div>
+        <div class="time time-bottom time-bottom-down">
+            8:30 AM
+        </div>
+    </td>
+    <td colspan="3" class="td-slot">
+        <div class="slot slot-break">
+            Registration @Ballroom 1
+            <br>
+            Breakfast @Ballroom 3
+        </div>
+    </td>
+</tr>
+<tr>
+    <td class="td-time">
+        <div class="time time-line">
+            &nbsp;
+        </div>
+        <div class="time time-bottom time-bottom-down">
+            10:00 AM
+        </div>
+    </td>
+    <td colspan="3" class="td-slot">
+        <div onclick="show_session_info('k-4')" class="slot slot-large slot-session slot-session-k">
+            {% include '_program_cme_icon.html' %}
+            <span class="txt-sm">Keynote</span> 
+            <span>Toward a Learning Health System: Enabling the National Knowledge Ecosystem at Scale</span>
+            <br>
+            <span>
+                Dr. Blackford Middleton
+            </span>
+            <br>
+            <span class="txt-sm">Panel:</span>
+            <span>
+                Bridging the gaps between academia and industry for health informatics
+            </span>
+            (9:30 - 10:00)
+            <br>
+            @Ballroom 2
+        </div>
+    </td>
+</tr>
+<tr>
+    <td class="td-time">
+        <div class="time time-bottom time-bottom-down">
+            10:30 AM
+        </div>
+    </td>
+    <td colspan="3" class="td-slot">
+        <div class="slot slot-break">
+            <i class="fas fa-coffee"></i>
+            Coffee Break @Ballroom 1
+        </div>
+    </td>
+</tr>
+<tr>
+    <td class="td-time">
+        <div class="time time-line">
+            &nbsp;
+        </div>
+        <div class="time time-bottom time-bottom-down">
+            12:00 PM
+        </div>
+    </td>
+    <td onclick="show_session_info('i-1')" colspan="3" class="td-slot">
+        <div class="slot slot-large slot-session slot-session-i">
+            {% include '_program_cme_icon.html' %}
+            <span>
+                Industry Session
+            </span>
+            <br>
+            <span class="session-loc">@Ballroom 2</span>
+        </div>
+    </td>
+</tr>
+<tr>
+    <td colspan="4" class="td-slot">
+        <div class="slot slot-blank-break">
+            &nbsp;
+        </div>
+    </td>
+</tr>
+<tr>
+    <td class="td-time">
+        <div class="time time-line">
+            &nbsp;
+        </div>
+        <div class="time time-bottom time-bottom-down">
+            12:30 PM
+        </div>
+    </td>
+    <td onclick="show_session_info('k-5')" 
+        colspan="3" class="td-slot">
+        <div class="slot slot-large slot-session slot-session-k">
+            Close Session
+            <br>
+            <span class="session-loc">@Ballroom 2</span>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td class="td-time">
+        <div class="time time-bottom time-bottom-down">
+            &nbsp;
+        </div>
+    </td>
+    <td colspan="3" class="td-slot">
+        <div class="slot slot-break">
+            <i class="fas fa-utensils"></i> 
+            Grab &amp; Go Lunch @Ballroom 3
+        </div>
+    </td>
+</tr>
+</table>
+{% endif %}
+

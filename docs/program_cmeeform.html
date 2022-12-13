@@ -1,0 +1,3179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Huan He">
+    <link rel="shortcut icon" href="./static/image/favicon.ico">
+    <title>ICHI 2022 | 
+Program CME E-Form
+</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            min-height: 55rem;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            text-shadow: 2px 2px #000b3c;
+        }
+
+        .ichi-news li {
+            margin-bottom: 0.25em;
+        }
+        
+        .text-red {
+            color: red;
+        }
+
+        .text-shadow {
+            text-shadow: 1px 1px #000b3c;
+        }
+
+        .bio-noimg img {
+            display: none;
+        }
+
+        .bio-noimg h5 {
+            font-size: 1rem;
+        }
+
+        .bio-noimg p {
+        }
+
+        .bio-short img {
+            display: none;
+        }
+
+        .bio-short h5 {
+            font-size: 1rem;
+            display: inline;
+        }
+
+        .bio-short p {
+            font-size: 0.95rem;
+            display: inline;
+        }
+        .bio-short .people-profile-email {
+            display: none;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        .dropdown-menu {
+            border: 0;
+            border-radius: 0;
+        }
+
+        .cover-image {
+            background: no-repeat bottom;
+            background-size: cover;
+            /* background-size: 100% 100%; */
+        }
+
+        .min-height-10 {
+            min-height: 10rem !important;
+        }
+
+        .min-height-12 {
+            min-height: 12rem !important;
+        }
+
+        .bg-ichiblue {
+            background-color: rgb(0, 37, 82, 80%) !important;
+        }
+
+        .bg-ichiblue-light {
+            background-color: #335075 !important;
+        }
+
+        .people-profile-photo {
+            width: 100%;
+        }
+
+        .people-profile-email {
+            color: #777777;
+            font-size: .95em;
+        }
+
+        .link-white {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px dotted transparent;
+        }
+
+        .link-white:hover {
+            color: white;
+            border-bottom: 1px dotted white;
+        }
+
+        blockquote.twitter-tweet {
+            display: inline-block;
+            font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 16px;
+            border-color: #eee #ddd #bbb;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+            margin: 10px 5px;
+            padding: 0 16px 16px 16px;
+            max-width: 468px;
+        }
+
+        blockquote.twitter-tweet p {
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 20px;
+        }
+
+        blockquote.twitter-tweet a {
+            color: inherit;
+            font-weight: normal;
+            text-decoration: none;
+            outline: 0 none;
+        }
+
+        blockquote.twitter-tweet a:hover,
+        blockquote.twitter-tweet a:focus {
+            text-decoration: underline;
+        }
+
+        .fs-sm {
+            font-size: .8em;
+        }
+
+        .footer_logo img {
+            height: 25px;
+            width: auto;
+        }
+
+        .footer_link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer_link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .keynote_img {
+            float: right;
+            max-width: 200px; 
+            margin: 0 1.5em;
+        }
+
+        .sponsor-h4 {
+            font-weight: bolder;
+            color: #777777;
+            border-top: 1px solid #efefef;
+            padding-top: 1em;
+        }
+
+        .sponsor-logo {
+            display: block;
+            margin-left: 1em;
+            margin-right: 1em;
+            text-decoration: none;
+        }
+        .sponsor-logo img {
+            max-width: 100%;
+            max-height: 57px;
+        }
+
+        .lw-a {
+            width: 0.5em;
+            height: 1em;
+            margin-bottom: -0.2em;
+            display: inline-block;
+            /* background-image: url('./static/image/lw-a.png'); */
+            background-repeat: no-repeat;
+            background-size: 0.5em 1em;
+        }
+
+        .lw-b {
+            width: 0.5em;
+            height: 1em;
+            margin-bottom: -0.2em;
+            display: inline-block;
+            /* background-image: url('./static/image/lw-b.png'); */
+            background-repeat: no-repeat;
+            background-size: 0.5em 1em;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-ichiblue fixed-top" aria-label="Navbar ICHI 2022">
+            <div class="container">
+                <a class="navbar-brand" style="padding: 0;" href="./">
+                    <img src="./static/image/logo-white.png" style="height: 2em;" alt="IEEE ICHI 2022">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample07">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown"
+                                aria-expanded="false">Contribute</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown07">
+                                <li><a class="dropdown-item" href="./call_for_papers.html">Call for Papers</a></li>
+                                <li><a class="dropdown-item" href="./call_for_posters_and_demos.html">Call for Posters
+                                        and Demos</a></li>
+                                <li><a class="dropdown-item" href="./call_for_workshops.html">Call for Workshops</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./call_for_doctorial_consortium.html">Call for
+                                        Doctorial Consortium</a></li>
+                                <li><a class="dropdown-item" href="./call_for_industry_track.html">Call for Industry
+                                        Track</a></li>
+                                <li><a class="dropdown-item" href="./call_for_tutorials.html">Call for Tutorials</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./workshops.html">
+                                Workshops
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./attending.html">
+                                Attending
+                            </a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./attendance_grant.html">
+                                Attendance Grant
+                            </a>
+                        </li> -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./venue_and_logistics.html">
+                                Venue
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./program.html">
+                                Program
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./awards.html">
+                                Awards
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./presenter_guidelines.html">
+                                Presenters
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./keynotes.html">
+                                Keynotes
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./cme.html">
+                                CME Credits
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./call_for_sponsors.html">
+                                Sponsors
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./committees.html">
+                                Committees
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="position-relative overflow-hidden pt-5 mb-5 text-center bg-light cover-image"
+    style="background-image: url('./static/image/rst-3.jpg');">
+    <div class="col-md-10 p-lg-5 mx-auto my-5 text-white min-height-12">
+        <h1 class="pt-5 display-4 fw-bold">
+            PROGRAM CME E-Form
+        </h1>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+</div>
+
+<style>
+.cme-q {
+    text-align: center;
+}
+.cme-val {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 0.9em;
+    text-align: center;
+}
+.checkbox-like {
+    border: 1px solid black;
+}
+.table-cme th {
+    text-align: center;
+}
+</style>
+<div class="container">
+
+    <div class="col-md-10 p-lg-5 mb-5 mx-auto min-height-10 ">
+
+        <div class="row mb-5">
+            <p>
+                <button onclick="selectText('cme')">
+                    Select All
+                </button>
+            </p>
+            <div id="cme" class="col">
+                
+                <!-- <h3>
+                    Sunday, June 12
+                </h3> -->
+                
+                <h4>
+                    Sunday, June 12, Keynote 1: Track Keynote
+                </h4>
+                <table class="table table-cme">
+                    <tr>
+                        <td colspan="2"></td>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The content presented meets and exceeds my expectation
+                        </th>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The faculty did a fantastic job in explaining the content
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="40%">Title</th>
+                        <th width="10%">Speaker</th>
+                        <td colspan="2" style="text-align: center;">
+                            5- strongly agree, 1- strongly disagree
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Towards Impactful Clinical Evidence Powered by Informatics and Data Science
+                        </td>
+                        <td style="text-align: center;">
+                            Dr. Chunhua Weng
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <h4>
+                    Sunday, June 12, Analytics Track Session 1: ML Methodology
+                </h4>
+                <table class="table table-cme">
+                    <tr>
+                        <td colspan="2"></td>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The content presented meets and exceeds my expectation
+                        </th>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The faculty did a fantastic job in explaining the content
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="40%">Title</th>
+                        <th width="10%">Speaker</th>
+                        <td colspan="2" style="text-align: center;">
+                            5- strongly agree, 1- strongly disagree
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            New Variations of Random Survival Forests and Applications to Age-Related Disease Data
+                        </td>
+                        <td style="text-align: center;">
+                            Tossapol Pomsuwan
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Sharing Time-to-Event Data with Privacy Protection
+                        </td>
+                        <td style="text-align: center;">
+                            Luca Bonomi
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            A novel method for handling Missing Not at Random Data in the electronic health records
+                        </td>
+                        <td style="text-align: center;">
+                            Xinpeng Shen
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            A Transformer-based Model for Older Adult Behavior Change Detection
+                        </td>
+                        <td style="text-align: center;">
+                            Fateme Akbari
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Effects of Information Masking in the Task-Specific Finetuning of a Transformers-Based Clinical Question-Answering Framework
+                        </td>
+                        <td style="text-align: center;">
+                            Jungwei Fan
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <h4>
+                    Sunday, June 12, Analytics Track Session 2: Imaging
+                </h4>
+                <table class="table table-cme">
+                    <tr>
+                        <td colspan="2"></td>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The content presented meets and exceeds my expectation
+                        </th>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The faculty did a fantastic job in explaining the content
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="40%">Title</th>
+                        <th width="10%">Speaker</th>
+                        <td colspan="2" style="text-align: center;">
+                            5- strongly agree, 1- strongly disagree
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            AGMC-TU Pap-Smear Cytological Image Dataset: Creation, Annotation, and Analysis towards Early Detection of Cervical Cancer
+                        </td>
+                        <td style="text-align: center;">
+                            Sourav Dey Roy
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Bayesian optimization-derived batch size and learning rate scheduling in deep neural network training for head and neck tumor segmentation
+                        </td>
+                        <td style="text-align: center;">
+                            Haifeng Wang
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Deep Ensemble Network with Meta-Model Architecture to Early Detect the Vascular Damage Caused by Retinopathy
+                        </td>
+                        <td style="text-align: center;">
+                            Muhammad Zubair Khan
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Eating detection with a head-mounted video camera
+                        </td>
+                        <td style="text-align: center;">
+                            Shengjie Bi
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Visualization and Qualitative Analysis of Rehabilitation Exercises Based on a Mobile App
+                        </td>
+                        <td style="text-align: center;">
+                            Oluwadamilola Arinde
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <h4>
+                    Sunday, June 12, Analytics Track Session 3: PGHD and Text Analytics
+                </h4>
+                <table class="table table-cme">
+                    <tr>
+                        <td colspan="2"></td>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The content presented meets and exceeds my expectation
+                        </th>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The faculty did a fantastic job in explaining the content
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="40%">Title</th>
+                        <th width="10%">Speaker</th>
+                        <td colspan="2" style="text-align: center;">
+                            5- strongly agree, 1- strongly disagree
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Combining Attention-based Models with the MeSH Ontology for Semantic Textual Similarity in Clinical Notes
+                        </td>
+                        <td style="text-align: center;">
+                            Noushin Salek Faramarzi
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            A comparison of few-shot and traditional named entity recognition models for medical text
+                        </td>
+                        <td style="text-align: center;">
+                            Yao Ge
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Aspect-based Sentiment Analysis of Radiology Patient Experience Surveys: A Cohort Study
+                        </td>
+                        <td style="text-align: center;">
+                            Kurt Miller
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Graph-Augmented Cyclic Learning Framework for Similarity Estimation of Medical Clinical Notes
+                        </td>
+                        <td style="text-align: center;">
+                            Can Zheng
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Mining Social Media Data to Predict COVID-19 Case Counts
+                        </td>
+                        <td style="text-align: center;">
+                            Manar Samad
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <h4>
+                    Sunday, June 12, Keynote 2: Track Keynote
+                </h4>
+                <table class="table table-cme">
+                    <tr>
+                        <td colspan="2"></td>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The content presented meets and exceeds my expectation
+                        </th>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The faculty did a fantastic job in explaining the content
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="40%">Title</th>
+                        <th width="10%">Speaker</th>
+                        <td colspan="2" style="text-align: center;">
+                            5- strongly agree, 1- strongly disagree
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Leveraging Digital Therapeutics for Health Literacy: A Systems Perspective
+                        </td>
+                        <td style="text-align: center;">
+                            Dr. Rema Padman
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <h4>
+                    Sunday, June 12, Analytics Track Session 4: Healthcare Analytics
+                </h4>
+                <table class="table table-cme">
+                    <tr>
+                        <td colspan="2"></td>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The content presented meets and exceeds my expectation
+                        </th>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The faculty did a fantastic job in explaining the content
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="40%">Title</th>
+                        <th width="10%">Speaker</th>
+                        <td colspan="2" style="text-align: center;">
+                            5- strongly agree, 1- strongly disagree
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            A Network-based Modeling Approach to Identify the Common Disease Classes in Patients with Late-stage Prostate Cancer
+                        </td>
+                        <td style="text-align: center;">
+                            Michal Monselise
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Multi-modal Contrastive Learning for Healthcare Data Analytics
+                        </td>
+                        <td style="text-align: center;">
+                            Rui Li
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Dynamic Network Connectivity Analysis for Understanding Attention Deficit Hyperactivity Disorder
+                        </td>
+                        <td style="text-align: center;">
+                            Haifeng Wang
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Biventricular involvement in hypertrophic cardiomyopathy: Preliminary analysis of cardiac MRIs with visual Right Ventricular Hypertrophy
+                        </td>
+                        <td style="text-align: center;">
+                            Devanshi Damani
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Identify Cancer Patients at Risk for Heart Failure using Electronic Health Record and Genetic Data
+                        </td>
+                        <td style="text-align: center;">
+                            Zehao Yu
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <h4>
+                    Sunday, June 12, Systems Track Session 1: Design &amp; Development
+                </h4>
+                <table class="table table-cme">
+                    <tr>
+                        <td colspan="2"></td>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The content presented meets and exceeds my expectation
+                        </th>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The faculty did a fantastic job in explaining the content
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="40%">Title</th>
+                        <th width="10%">Speaker</th>
+                        <td colspan="2" style="text-align: center;">
+                            5- strongly agree, 1- strongly disagree
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Design of a Virtual Cocaine Consumption Scenario for Craving Study
+                        </td>
+                        <td style="text-align: center;">
+                            Flavien Lecuyer
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            tinyCare: A tinyML-based Low-Cost Continuous Blood Pressure Estimation on the Extreme Edge
+                        </td>
+                        <td style="text-align: center;">
+                            Mohamed Hassan
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Efficient and Private ECG Classification on the Edge Using a Modified Split Learning Mechanism
+                        </td>
+                        <td style="text-align: center;">
+                            Ahmad Ayad
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Quality Control of Whole Slide Images using the YOLO Concept
+                        </td>
+                        <td style="text-align: center;">
+                            Kimia Hemmatirad
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Radiology Text Analysis System (RadText): Architecture and Evaluation
+                        </td>
+                        <td style="text-align: center;">
+                            Yifan Peng
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <h4>
+                    Sunday, June 12, Human Factors Track Session 1: Human-centered Design
+                </h4>
+                <table class="table table-cme">
+                    <tr>
+                        <td colspan="2"></td>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The content presented meets and exceeds my expectation
+                        </th>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The faculty did a fantastic job in explaining the content
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="40%">Title</th>
+                        <th width="10%">Speaker</th>
+                        <td colspan="2" style="text-align: center;">
+                            5- strongly agree, 1- strongly disagree
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Modeling the Impact of Social Determinants of Health on COVID Behaviors in Older Adults using the All of Us Dataset
+                        </td>
+                        <td style="text-align: center;">
+                            Phillip Ma 
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Different Length, Different Needs: Qualitative Analysis of Threads in Online Health Communities
+                        </td>
+                        <td style="text-align: center;">
+                            Daniel Diethei
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Electro-Mechanical Data Fusion for Heart Health Monitoring
+                        </td>
+                        <td style="text-align: center;">
+                            Kemal Yakut
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                
+                
+                <!-- <h3>
+                    Monday, June 13
+                </h3> -->
+                
+                <h4>
+                    Monday, June 13, Keynote 3: Track Keynote
+                </h4>
+                <table class="table table-cme">
+                    <tr>
+                        <td colspan="2"></td>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The content presented meets and exceeds my expectation
+                        </th>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The faculty did a fantastic job in explaining the content
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="40%">Title</th>
+                        <th width="10%">Speaker</th>
+                        <td colspan="2" style="text-align: center;">
+                            5- strongly agree, 1- strongly disagree
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Designing Health IT to Support Team Cognition and Clinical Work: A Human Factors and Socio-Technical Systems Approach
+                        </td>
+                        <td style="text-align: center;">
+                            Dr. Ayse P. Gurses
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <h4>
+                    Monday, June 13, Analytics Track Session 5: Prediction and Classification
+                </h4>
+                <table class="table table-cme">
+                    <tr>
+                        <td colspan="2"></td>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The content presented meets and exceeds my expectation
+                        </th>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The faculty did a fantastic job in explaining the content
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="40%">Title</th>
+                        <th width="10%">Speaker</th>
+                        <td colspan="2" style="text-align: center;">
+                            5- strongly agree, 1- strongly disagree
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Cough Diary based on Sound Classification, Source Validation and Event Detection
+                        </td>
+                        <td style="text-align: center;">
+                            Jeffrey Okyere
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Reconstructing Missing EHRs Using Time-Aware Within- and Cross-Visit Information for Septic Shock Early Prediction
+                        </td>
+                        <td style="text-align: center;">
+                            Ge Gao
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Classifying Drug Ratings Using User Reviews with Transformer-Based Language Models
+                        </td>
+                        <td style="text-align: center;">
+                            Akhil Shiju
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Risk-Based Breast Cancer Prognosis Using Minimal Patient Characteristics
+                        </td>
+                        <td style="text-align: center;">
+                            Kanika Sood
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <h4>
+                    Monday, June 13, Systems Track Session 2: Wearables &amp; Monitoring
+                </h4>
+                <table class="table table-cme">
+                    <tr>
+                        <td colspan="2"></td>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The content presented meets and exceeds my expectation
+                        </th>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The faculty did a fantastic job in explaining the content
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="40%">Title</th>
+                        <th width="10%">Speaker</th>
+                        <td colspan="2" style="text-align: center;">
+                            5- strongly agree, 1- strongly disagree
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            PAMS - A Personalized Automatic Messaging System for User Engagement with a Digital Diabetes Prevention Program
+                        </td>
+                        <td style="text-align: center;">
+                            Danissa Rodriguez
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Predicting A User&#39;s Demographic Identity from Leaked Samples of Health-Tracking Wearables and Understanding Associated Risks
+                        </td>
+                        <td style="text-align: center;">
+                            Sudip Vhaduri
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            The Visual Accelerometer: A High-fidelity Optic-to-Inertial Transformation Framework for Wearable Health Computing
+                        </td>
+                        <td style="text-align: center;">
+                            Chenhan Xu
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Practicality of Automatic Monitoring Sufficient Fluid Intake for Older People
+                        </td>
+                        <td style="text-align: center;">
+                            Rainer Lutze
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <h4>
+                    Monday, June 13, Human Factors Track Session 2: Self Management
+                </h4>
+                <table class="table table-cme">
+                    <tr>
+                        <td colspan="2"></td>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The content presented meets and exceeds my expectation
+                        </th>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The faculty did a fantastic job in explaining the content
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="40%">Title</th>
+                        <th width="10%">Speaker</th>
+                        <td colspan="2" style="text-align: center;">
+                            5- strongly agree, 1- strongly disagree
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            A Qualitative Study of Family Caregivers&#39; Technology Use in Alzheimer&#39;s Disease Care
+                        </td>
+                        <td style="text-align: center;">
+                            Yun Qu
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            A Tale of Two Perspectives: Harvesting System Views and User Views to Understand Patient Portal Engagement
+                        </td>
+                        <td style="text-align: center;">
+                            Jiawei Zhou
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Patient Portal Adoption, Use, and Satisfaction among U.S. Adults in Late-stage COVID-19 Pandemic
+                        </td>
+                        <td style="text-align: center;">
+                            Tera L. Reynolds
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            A Systematic Review of Healthcare Information Technology Anomaly Classification
+                        </td>
+                        <td style="text-align: center;">
+                            Laura Pullum
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Human-centered Design for a Chronic Disease Management System: An explorative case for Cystic Fibrosis
+                        </td>
+                        <td style="text-align: center;">
+                            Maximilian Kurscheidt
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <h4>
+                    Monday, June 13, Analytics Track Session 6: Event Prediction
+                </h4>
+                <table class="table table-cme">
+                    <tr>
+                        <td colspan="2"></td>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The content presented meets and exceeds my expectation
+                        </th>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The faculty did a fantastic job in explaining the content
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="40%">Title</th>
+                        <th width="10%">Speaker</th>
+                        <td colspan="2" style="text-align: center;">
+                            5- strongly agree, 1- strongly disagree
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Audio-Based Cough Detection in Clinic Waiting Rooms
+                        </td>
+                        <td style="text-align: center;">
+                            Yumna Anwar
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            EventScore: An Automated Real-time Early Warning Score for Clinical Events
+                        </td>
+                        <td style="text-align: center;">
+                            Ibrahim Hammoud
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Reduce the Cold Start of COVID-19 In-hospital Mortality Prediction Models via Transfer Learning
+                        </td>
+                        <td style="text-align: center;">
+                            Jiacheng Liu
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Detection of Dementia Signals from Longitudinal Clinical Visits Using One-Class Classification
+                        </td>
+                        <td style="text-align: center;">
+                            Sunghwan Sohn
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <h4>
+                    Monday, June 13, Analytics Track Session 7: Visualization &amp; Explainable AI
+                </h4>
+                <table class="table table-cme">
+                    <tr>
+                        <td colspan="2"></td>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The content presented meets and exceeds my expectation
+                        </th>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The faculty did a fantastic job in explaining the content
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="40%">Title</th>
+                        <th width="10%">Speaker</th>
+                        <td colspan="2" style="text-align: center;">
+                            5- strongly agree, 1- strongly disagree
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Core-set Selection Using Metrics-based Explantations (CSUME) for multiclass ECG
+                        </td>
+                        <td style="text-align: center;">
+                            Sagnik Dakshit
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            A Collaborative Platform Supporting Distributed Teams in Visualization and Analysis of Infectious Disease Data
+                        </td>
+                        <td style="text-align: center;">
+                            Florian Vögtle
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Alcohol Status Standardization from Clinical Real World Data with Transformer Architectures
+                        </td>
+                        <td style="text-align: center;">
+                            Amila Kugic
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            An Interactive Visualization Tool for Medication (Re)fill Adherence: A Case Study of Pharmacy Claims-derived Adherence Measures in Asthmatics
+                        </td>
+                        <td style="text-align: center;">
+                            Kevin Gorman
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            LIVE: A Local Interpretable model-agnostic Visualizations and Explanations
+                        </td>
+                        <td style="text-align: center;">
+                            Peichang Shi
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <h4>
+                    Monday, June 13, Human Factors Track Session 3: AI-based Applications
+                </h4>
+                <table class="table table-cme">
+                    <tr>
+                        <td colspan="2"></td>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The content presented meets and exceeds my expectation
+                        </th>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The faculty did a fantastic job in explaining the content
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="40%">Title</th>
+                        <th width="10%">Speaker</th>
+                        <td colspan="2" style="text-align: center;">
+                            5- strongly agree, 1- strongly disagree
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            A Novel IoT-based Framework for Non-Invasive Human Hygiene Monitoring using Machine Learning Techniques
+                        </td>
+                        <td style="text-align: center;">
+                            Md Jobair Hossain Faruk
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Oculo-Cognitive Addition Test: Quantifying Cognitive Performance During Variable Cognitive Workload Through Eye Movement Features
+                        </td>
+                        <td style="text-align: center;">
+                            Kate Hagen
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Designing AINA - Intercultural Human-Centered Design of an AI-based application for supporting the diagnosis of Female Genital Schistosomiasis
+                        </td>
+                        <td style="text-align: center;">
+                            Muhammed-Ugur Karagülle
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Factors Facilitating the Acceptance of Diagnostic Robots in Healthcare: A Survey
+                        </td>
+                        <td style="text-align: center;">
+                            Jannik S. Pedersen
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            The Impact of 3D Stereopsis and Hand-Tool Alignment on Effectiveness of a VR-based Simulator for Dental Training
+                        </td>
+                        <td style="text-align: center;">
+                            Peter Haddawy
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                
+                
+                <!-- <h3>
+                    Tuesday, June 14
+                </h3> -->
+                
+                <h4>
+                    Tuesday, June 14, Keynote 4: Track Keynote
+                </h4>
+                <table class="table table-cme">
+                    <tr>
+                        <td colspan="2"></td>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The content presented meets and exceeds my expectation
+                        </th>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The faculty did a fantastic job in explaining the content
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="40%">Title</th>
+                        <th width="10%">Speaker</th>
+                        <td colspan="2" style="text-align: center;">
+                            5- strongly agree, 1- strongly disagree
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Toward a Learning Health System: Enabling the National Knowledge Ecosystem at Scale
+                        </td>
+                        <td style="text-align: center;">
+                            Dr. Blackford Middleton
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <h4>
+                    Tuesday, June 14, Industry Track Session 1: Industry
+                </h4>
+                <table class="table table-cme">
+                    <tr>
+                        <td colspan="2"></td>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The content presented meets and exceeds my expectation
+                        </th>
+                        <th width="25%" style="line-height: 0.9em;">
+                            The faculty did a fantastic job in explaining the content
+                        </th>
+                    </tr>
+                    <tr>
+                        <th width="40%">Title</th>
+                        <th width="10%">Speaker</th>
+                        <td colspan="2" style="text-align: center;">
+                            5- strongly agree, 1- strongly disagree
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            IMI-CDE: an interactive interface for collaborative mapping of study variables to common data elements
+                        </td>
+                        <td style="text-align: center;">
+                            Hua Xu
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Entity Event Knowledge Graph for Powerful Health Informatics
+                        </td>
+                        <td style="text-align: center;">
+                            Ravi Bajracharya
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            RWD Analytics Engineering, Bridging the Gap between IT and Data Science
+                        </td>
+                        <td style="text-align: center;">
+                            Andrew Nguyen
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            LANN: an integrated online annotation tool for information extraction
+                        </td>
+                        <td style="text-align: center;">
+                            Jingqi Wang
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Improving healthcare workforce efficiency using machine learning and predictive analytics
+                        </td>
+                        <td style="text-align: center;">
+                            Daniel Quest
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            RecordTime – An Internally-Developed Web Application to Ease the Pain of Reviewing PDF Medical Records
+                        </td>
+                        <td style="text-align: center;">
+                            Kevin Peterson
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                        <td class="cme-q">
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="cme-val checkbox-like">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <br>
+                            <span class="cme-val">&nbsp;&nbsp;&nbsp;1&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;2&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;3&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;4&nbsp;</span>
+                            <span class="cme-val">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                
+                
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function selectText(containerid) {
+    if (document.selection) { // IE
+        var range = document.body.createTextRange();
+        range.moveToElementText(document.getElementById(containerid));
+        range.select();
+    } else if (window.getSelection) {
+        var range = document.createRange();
+        range.selectNode(document.getElementById(containerid));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+    }
+}
+</script>
+
+
+    </main>
+
+    <footer class="bg-ichiblue-light text-white">
+        <div class="container pt-4 pb-3">
+            <div class="row">
+                <div class="col-12 col-md-3 mb-3">
+                    IEEE ICHI 2022<br>
+                    ALL RIGHTS RESERVED.
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <h5>PAST YEARS</h5>
+                    <div class="row">
+                        <div class="col col-md-6">
+                            <ul class="list-unstyled text-small">
+                                <li><a class="link-white" href="https://ichi2021.institute4hi.org/">2021, Victoria
+                                        (CA)</a></li>
+                                <li><a class="link-white" href="https://ichi2020.de/">2020, Oldenburg (DE)</a></li>
+                                <li><a class="link-white" href="https://ewh.ieee.org/conf/ichi/2019/index.html">2019,
+                                        Xi'an (CN)</a></li>
+                                <li><a class="link-white"
+                                        href="https://phs.weill.cornell.edu/divisions/health_informatics/ieee_ichi.html">2018,
+                                        New York City (USA)</a></li>
+                                <li><a class="link-white" href="http://dml.cs.byu.edu/chs/ichi2017/">2017, Park City
+                                        (USA)</a></li>
+                            </ul>
+                        </div>
+                        <div class="col col-md-6">
+                            <ul class="list-unstyled text-small">
+                                <li><a class="link-white" href="https://www.ieee-ichi.org/2016/">2016, Chicago (USA)</a>
+                                </li>
+                                <li><a class="link-white" href="http://cs.utdallas.edu/ichi2015/">2015, Dallas (USA)</a>
+                                </li>
+                                <li><a class="link-white" href="http://ichi2014.di.univr.it/">2014, Verona (IT)</a></li>
+                                <li><a class="link-white" href="https://sites.google.com/site/2013ichi/">2013,
+                                        Philadelphia (USA)</a></li>
+                                <li><a class="link-white" href="https://sites.google.com/site/web2011ihi/">2012, Miami
+                                        (USA)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5>SOCIAL MEDIA</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-white" href="https://twitter.com/ichi2022">Twitter</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bg-ichiblue py-4">
+            <div class="container">
+                <div class="d-flex flex-row mb-3">
+                    <a class="footer_logo me-3" 
+                        href="https://www.ieee.org" target="_blank">
+                        <img height="35" src="./static/image/ieee-logo-white.svg" alt="IEEE">
+                    </a>
+                    <a class="footer_logo me-3" 
+                        href="https://www.computer.org" 
+                        target="_blank">
+                        <img height="35" src="./static/image/ieee-cs-logo-white.svg" alt="IEEE Computer Society">
+                    </a>
+                </div>
+    
+                <div class="d-flex flex-col lg:flex-row justify-content-between text-sm">
+                    <div>
+                        <span>© 2021-2022 IEEE. Sponsored by the IEEE Computer Society.</span>
+                    </div>
+                    <div>
+                        <a class="footer_link" href="https://www.ieee.org/security-privacy.html" target="_new">IEEE Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

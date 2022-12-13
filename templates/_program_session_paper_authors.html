@@ -1,0 +1,14 @@
+<div class="session-paper">
+    <div class="paper-title">
+        {% if p['Length'] == '25' %}
+        
+        {% else %}
+        <span class="badge bg-info">S</span>
+        {% endif %}
+
+        {{ p['Title'] }}
+    </div>
+    <div class="paper-authors">
+        {{ p['Authors'] }}
+    </div>
+</div>

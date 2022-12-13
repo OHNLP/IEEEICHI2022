@@ -1,0 +1,286 @@
+{% extends '_layout.html' %}
+
+{% block title %}
+Committees
+{% endblock %}
+
+{% block content %}
+<div class="position-relative overflow-hidden pt-5 mb-5 cover-image"
+    style="background-image: url('./static/image/rst-2.jpg');">
+    <div class="col-md-10 p-lg-5 mx-auto my-5 text-center text-white min-height-12">
+        <h1 class="pt-5 display-4 fw-bold">
+             Committees
+        </h1>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+</div>
+
+
+<div class="container mb-5">
+    <h2 class="text-center mt-4 mb-5 pb-4">
+        Organisational Committee
+    </h2>
+
+
+    <div class="row mb-5 pb-4 border-bottom border-2">
+        <div class="col-md-3">
+            <h4>General Chairs</h4>
+        </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/hongfang.html' %}
+                </div>
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/ravishankar.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row mb-5 pb-4 border-bottom border-2">
+        <div class="col-md-3">
+            <h3>Program Chairs</h3>
+        </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                
+                <div class="col-6 col-md-3 fs-sm">
+                    <b class="mt-2 fs-6">
+                        Analytics Track
+                    </b>
+                    {% include 'committees/tianxi.html' %}
+                </div>
+                
+                <div class="col-6 col-md-3 fs-sm">
+                    <b class="mt-2 fs-6">
+                        Human Factors Track
+                    </b>
+                    {% include 'committees/yang.html' %}
+                </div>
+                
+                <div class="col-6 col-md-3 fs-sm">
+                    <b class="mt-2 fs-6">
+                        Systems Track
+                    </b>
+                    {% include 'committees/kalyan.html' %}
+                </div>
+
+            </div> 
+        </div>
+    </div>
+
+
+    <div class="row mb-5 pb-4 border-bottom border-2">
+        <div class="col-md-3">
+            <h3>Poster and Demonstration Chairs</h3>
+        </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/rui.html' %}
+                </div> 
+
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/dehua.html' %}
+                </div> 
+            </div> 
+            
+        </div>
+    </div>
+
+
+    <div class="row mb-5 pb-4 border-bottom border-2">
+        <div class="col-md-3">
+            <h3>Workshops Chair</h3>
+        </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/yanshan.html' %}
+                </div> 
+            </div> 
+            
+        </div>
+    </div>
+
+
+    <div class="row mb-5 pb-4 border-bottom border-2">
+        <div class="col-md-3">
+            <h3>Doctoral Consortium Chairs</h3>
+        </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/gondy.html' %}
+                </div> 
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/dezhi.html' %}
+                </div> 
+            </div> 
+            
+        </div>
+    </div>
+
+
+    <div class="row mb-5 pb-4 border-bottom border-2">
+        <div class="col-md-3">
+            <h3>Industry Track Chairs</h3>
+        </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/hua.html' %}
+                </div> 
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/prasanna.html' %}
+                </div> 
+            </div> 
+            
+        </div>
+    </div>
+
+
+    <div class="row mb-5 pb-4 border-bottom border-2">
+        <div class="col-md-3">
+            <h3>Tutorial Chairs</h3>
+        </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/ali.html' %}
+                </div> 
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/nansu.html' %}
+                </div> 
+            </div> 
+            
+        </div>
+    </div>
+
+
+    <div class="row mb-5 pb-4 border-bottom border-2">
+        <div class="col-md-3">
+            <h3>Local Chair</h3>
+        </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/dennis.html' %}
+                </div> 
+            </div> 
+            
+        </div>
+    </div>
+
+
+    <div class="row mb-5 pb-4 border-bottom border-2">
+        <div class="col-md-3">
+            <h3>Financial Chairs</h3>
+        </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/alexander.html' %}
+                </div> 
+
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/che.html' %}
+                </div> 
+            </div> 
+            
+        </div>
+    </div>
+
+
+    <div class="row mb-5 pb-4 border-bottom border-2">
+        <div class="col-md-3">
+            <h3>Publication Chairs</h3>
+        </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/matteo.html' %}
+                </div> 
+                
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/ming.html' %}
+                </div> 
+            </div> 
+        </div>
+    </div>
+
+
+    <div class="row mb-5 pb-4 border-bottom border-2">
+        <div class="col-md-3">
+            <h3>Web Chair</h3>
+        </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/huan.html' %}
+                </div> 
+            </div> 
+        </div>
+    </div>
+
+
+    <h2 class="text-center mt-5 mb-5 pb-4">
+        IEEE-ICHI Steering Committee
+    </h2>
+
+    <div class="row mb-5 pb-4 border-bottom border-2">
+        <div class="col-md-3">
+            <h3>Steering Committee</h3>
+        </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/christopher.html' %}
+                </div> 
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/carlo.html' %}
+                </div> 
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/balakrishnan.html' %}
+                </div> 
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/julio.html' %}
+                </div> 
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/fei.html' %}
+                </div> 
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/jochen.html' %}
+                </div> 
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/giuseppe.html' %}
+                </div> 
+                <div class="col-6 col-md-3 fs-sm">
+                    {% include 'committees/hongfang.html' %}
+                </div> 
+            </div> 
+        </div>
+    </div>
+
+
+    <!-- <h2 class="text-center mt-4 mb-5 pb-4">
+        Program Committee
+    </h2> -->
+
+</div>
+{% endblock %}

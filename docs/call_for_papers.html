@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Huan He">
+    <link rel="shortcut icon" href="./static/image/favicon.ico">
+    <title>ICHI 2022 | 
+Call for Papers
+</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            min-height: 55rem;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            text-shadow: 2px 2px #000b3c;
+        }
+
+        .ichi-news li {
+            margin-bottom: 0.25em;
+        }
+        
+        .text-red {
+            color: red;
+        }
+
+        .text-shadow {
+            text-shadow: 1px 1px #000b3c;
+        }
+
+        .bio-noimg img {
+            display: none;
+        }
+
+        .bio-noimg h5 {
+            font-size: 1rem;
+        }
+
+        .bio-noimg p {
+        }
+
+        .bio-short img {
+            display: none;
+        }
+
+        .bio-short h5 {
+            font-size: 1rem;
+            display: inline;
+        }
+
+        .bio-short p {
+            font-size: 0.95rem;
+            display: inline;
+        }
+        .bio-short .people-profile-email {
+            display: none;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        .dropdown-menu {
+            border: 0;
+            border-radius: 0;
+        }
+
+        .cover-image {
+            background: no-repeat bottom;
+            background-size: cover;
+            /* background-size: 100% 100%; */
+        }
+
+        .min-height-10 {
+            min-height: 10rem !important;
+        }
+
+        .min-height-12 {
+            min-height: 12rem !important;
+        }
+
+        .bg-ichiblue {
+            background-color: rgb(0, 37, 82, 80%) !important;
+        }
+
+        .bg-ichiblue-light {
+            background-color: #335075 !important;
+        }
+
+        .people-profile-photo {
+            width: 100%;
+        }
+
+        .people-profile-email {
+            color: #777777;
+            font-size: .95em;
+        }
+
+        .link-white {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px dotted transparent;
+        }
+
+        .link-white:hover {
+            color: white;
+            border-bottom: 1px dotted white;
+        }
+
+        blockquote.twitter-tweet {
+            display: inline-block;
+            font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 16px;
+            border-color: #eee #ddd #bbb;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+            margin: 10px 5px;
+            padding: 0 16px 16px 16px;
+            max-width: 468px;
+        }
+
+        blockquote.twitter-tweet p {
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 20px;
+        }
+
+        blockquote.twitter-tweet a {
+            color: inherit;
+            font-weight: normal;
+            text-decoration: none;
+            outline: 0 none;
+        }
+
+        blockquote.twitter-tweet a:hover,
+        blockquote.twitter-tweet a:focus {
+            text-decoration: underline;
+        }
+
+        .fs-sm {
+            font-size: .8em;
+        }
+
+        .footer_logo img {
+            height: 25px;
+            width: auto;
+        }
+
+        .footer_link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer_link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .keynote_img {
+            float: right;
+            max-width: 200px; 
+            margin: 0 1.5em;
+        }
+
+        .sponsor-h4 {
+            font-weight: bolder;
+            color: #777777;
+            border-top: 1px solid #efefef;
+            padding-top: 1em;
+        }
+
+        .sponsor-logo {
+            display: block;
+            margin-left: 1em;
+            margin-right: 1em;
+            text-decoration: none;
+        }
+        .sponsor-logo img {
+            max-width: 100%;
+            max-height: 57px;
+        }
+
+        .lw-a {
+            width: 0.5em;
+            height: 1em;
+            margin-bottom: -0.2em;
+            display: inline-block;
+            /* background-image: url('./static/image/lw-a.png'); */
+            background-repeat: no-repeat;
+            background-size: 0.5em 1em;
+        }
+
+        .lw-b {
+            width: 0.5em;
+            height: 1em;
+            margin-bottom: -0.2em;
+            display: inline-block;
+            /* background-image: url('./static/image/lw-b.png'); */
+            background-repeat: no-repeat;
+            background-size: 0.5em 1em;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-ichiblue fixed-top" aria-label="Navbar ICHI 2022">
+            <div class="container">
+                <a class="navbar-brand" style="padding: 0;" href="./">
+                    <img src="./static/image/logo-white.png" style="height: 2em;" alt="IEEE ICHI 2022">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample07">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown"
+                                aria-expanded="false">Contribute</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown07">
+                                <li><a class="dropdown-item" href="./call_for_papers.html">Call for Papers</a></li>
+                                <li><a class="dropdown-item" href="./call_for_posters_and_demos.html">Call for Posters
+                                        and Demos</a></li>
+                                <li><a class="dropdown-item" href="./call_for_workshops.html">Call for Workshops</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./call_for_doctorial_consortium.html">Call for
+                                        Doctorial Consortium</a></li>
+                                <li><a class="dropdown-item" href="./call_for_industry_track.html">Call for Industry
+                                        Track</a></li>
+                                <li><a class="dropdown-item" href="./call_for_tutorials.html">Call for Tutorials</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./workshops.html">
+                                Workshops
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./attending.html">
+                                Attending
+                            </a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./attendance_grant.html">
+                                Attendance Grant
+                            </a>
+                        </li> -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./venue_and_logistics.html">
+                                Venue
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./program.html">
+                                Program
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./awards.html">
+                                Awards
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./presenter_guidelines.html">
+                                Presenters
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./keynotes.html">
+                                Keynotes
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./cme.html">
+                                CME Credits
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./call_for_sponsors.html">
+                                Sponsors
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./committees.html">
+                                Committees
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        
+<div class="position-relative overflow-hidden pt-5 mb-5 text-center bg-light cover-image"
+    style="background-image: url('./static/image/rst-9.jpg');">
+    <div class="col-md-10 p-lg-5 mx-auto my-5 text-white min-height-12">
+        <h1 class="pt-5 display-4 fw-bold">
+            CALL FOR PAPERS
+        </h1>
+        <p class="lead fw-normal">
+            &nbsp;
+        </p>
+        <a class="btn btn-primary" href="https://easychair.org/conferences/?conf=ieeeichi2022">
+            SUBMISSION
+        </a>
+        <a class="btn btn-secondary" href="https://www.ieee.org/conferences/publishing/templates.html">
+            TEMPLATE
+        </a>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+</div>
+
+
+<div class="container">
+    <div class="mb-5">
+
+        <div class="col-md-10 p-lg-5 mx-auto min-height-10 ">
+    
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>IMPORTANT DATES</h2>
+                </div>
+    
+                <div class="col-md-8">
+                    <ul>
+                        <li class="brush: text; plain-text">Submission deadline: <b>EXTENDED TO January 31st, 2022</b> <del>January 21st, 2022</del></li>
+                        <li class="brush: text; plain-text">Notification of acceptance: March 7th, 2022</li>
+                        <li class="brush: text; plain-text">Camera-ready copy due: March 21st, 2022</li>
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="mb-5">
+        <div class="col-md-10 p-lg-5 mx-auto min-height-10">
+            <div class="row">
+                
+                <h2>Tracks</h2>
+                <p>
+                    ICHI 2022 serves as a venue for the discussion of innovative technologies and implementation science, highlighting end-to-end applications, systems, and technologies, even if available only in prototype form. We strongly encourage authors to submit their original contributions describing their algorithmic, methodological or empirical contributions, and theories relevant to the broader context of health informatics. Submissions can focus on one or more specific aspects of theory, design, development, evaluation, or deployment.
+                </p>
+
+
+                <h4>Analytics Track</h4>
+                <p>
+                    In the Analytics track, we invite submission on novel methods for exploring and analyzing healthcare data such as biomedical pattern recognition, biomarker discovery, disease profiling and personalized treatment, natural language processing and text mining, recommender systems, clinical phenotyping, visual analytics, explainability, and epidemiological modeling. Submissions may also report studies on data quality assurance, data cleaning, pre-processing, and ensuring quality and integrity of healthcare data. As large amounts of data become available in healthcare, we anticipate research submissions that address big data related topics (e.g. distribution and parallelization of data analytics in healthcare, large scale textual and graph data analytics, optimization of data analytics techniques, and novel statistical approaches to big data analytics in healthcare). Additionally, we encourage submission on privacy and security in sharing healthcare data as well as evaluation and validation of methods in healthcare data analytics.
+                </p>
+                
+                <h4>
+                    Human Factors Track
+                </h4>
+                <p>
+                    Contributions in the realm of Human Factors might include empirical studies of health-related information use and needs, socio-technical studies on the implementation and use of health information technology, studies on health informatics in the context of community impact and implications, descriptions of innovative user-centered design solutions, and studies of public policy on leveraging health informatics infrastructures. Submissions might report studies of user requirements, user-centered designs, or evaluations for use by professionals or members of the public, in hospitals, other care environments, or in the community (e.g. people’s homes). A broad range of interactive health technologies are of interest, including the human factors of information technology for healthcare delivery and management; interactive visualizations of health data; user interactions with decision-support systems; human factors for electronic health records and other types of clinical applications; interaction design for wearable and ubiquitous health technologies; and the interaction design of novel multimodal health devices.
+                </p>
+            
+                <h4>
+                    Systems Track
+                </h4>
+                <p>
+                    The Systems track welcomes submissions related to the design, development, deployment, and evaluation of high-performing privacy-preserving and secure software or hardware systems. The goals of these systems can be for improving healthcare efficiency, data quality, patient safety, infrastructure sustainability, care continuity, and cost containment outcomes. The Systems track also welcomes submissions on studies of consumer-facing applications that educate, engage, and empower patients or the general public to promote health and wellbeing; public health and population health informatics applications that monitor and control disease epidemic and address health issues at the population level; global health informatics research that focuses on disseminating innovations to developing economies; and research informatics innovations that enable or facilitate the conduct of basic science and clinical and translational research, especially in patient care settings towards learning health systems. Studies involving rigorous evaluation components are particularly encouraged, as well as studies describing innovative designs to address deficiencies or known unintended adverse consequences, such as disrupted workflow, diminished efficiency, decreased documentation quality, and escalated patient safety risks.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="mb-5">
+
+        <div class="col-md-10 p-lg-5 mx-auto min-height-10 ">
+            
+            <div class="row">
+                <h2>Submission</h2>
+
+                <div class="col-md-6">
+                    The conference will accept both regular and short papers.
+
+                    Regular papers (10 pages, up to 2 pages extra with no extra charge) will describe mature ideas, where a substantial amount of implementation, experimentation, or data collection and analysis has been completed.
+                    <br>
+                    Short papers (6 pages, up to 1 page extra with no extra charge) will describe innovative ideas, where preliminary implementation and validation work have been conducted.
+                    <br>
+                    The submission site is <a href="https://easychair.org/conferences/?conf=ieeeichi2022" target="_blank">EasyChair</a>.
+                </div>
+
+                <div class="col-md-6">
+                    When submitting papers, the authors must select a track that is most appropriate for their submission. For example, a paper on information systems for healthcare delivery can be submitted to either the Systems track, or the Human Factors track, depending on the focus of the work. Before a submission is sent to the reviewers, the program chairs will also perform an assessment to determine the best fit for the submission.
+                    <br>
+                    Paper submissions must adhere to the <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank">IEEE Proceedings Format</a> .
+                    <br>
+                    For publication opportunities as posters, demos, or in the industry track, for workshops, tutorials, and the doctoral consortium see the respective other calls.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+<div class="mb-5">
+    <div class="col-md-10 p-lg-5 mx-auto min-height-10 ">
+        <div class="row">
+            <h2>Reviewing</h2>
+            <p>
+                ICHI uses a single-blind two-layer peer reviewing process. The final decision will be made by the program chair of each track based on at least three reviews by program committee members and one metareview by senior program committee members. 
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="mb-5 ">
+        <div class="col-md-10 p-lg-5 mx-auto min-height-10 ">
+            <div class="row">
+                <h2>Presentation and Publication</h2>
+                <p>
+                    All submissions will be published in IEEE Xplore and indexed in other Abstracting and Indexing (A&amp;I) databases. Accepted papers have an oral presentation slot at the conference. Selected papers will be invited to submit the extended version to the Journal of Healthcare Informatics Research and a fast track review will be conducted for the extended papers.
+                </p>
+                
+                <p>
+                    For camera-ready submission, please follow the instruction in the notification email:
+                    <br>
+                    <br>
+                    Full Paper - 10 pages allowed (up to 2 pages extra with no extra charge) 
+                    <br>
+                    Short Paper - 6 pages allowed (up to 1 page extra with no extra charge)
+                    <br>
+                    <br>
+                    Please make sure you are submitting to the right submission category based on the notification. If your submission is a full paper with accepted as short presentation, please choose full paper as your submission category. If your submission is not accepted as paper but invited as poster, please follow the instruction of Poster Abstract. 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="mb-5">
+        <div class="col-md-10 p-lg-5 mx-auto min-height-10 ">
+            <div class="row">
+                <h2>Program Committee Co-Chairs</h2>
+
+                <div class="col-md-4">
+                    <h5 class="mt-2">
+                        Analytics Track
+                    </h5>
+                    
+                    <img class="people-profile-photo" 
+    src="./static/people/p-tianxi.jpg" 
+    alt="Tianxi Cai, PhD">
+<h5 class="mt-2">
+    Tianxi Cai, PhD
+</h5>
+<p>
+    <!-- Department of Biomedical Informatics<br> -->
+    Harvard University, Boston, MA, USA<br>
+</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5 class="mt-2">
+                        Human Factors Track
+                    </h5>
+                    <img class="people-profile-photo"
+    src="./static/people/p-yang.jpg" 
+    alt="Yang Gong, MD, PhD">
+<h5 class="mt-2">
+    Yang Gong, MD, PhD
+</h5>
+<p>
+    <!-- School of Biomedical Informatics<br> -->
+    University of Texas Health Science Center at Houston, Houston, TX, USA<br>
+</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5 class="mt-2">
+                        Systems Track
+                    </h5>
+                    <img class="people-profile-photo"
+    src="./static/people/p-kalyan.jpg" 
+    alt="Kalyan Pasupathy, PhD">
+<h5 class="mt-2">
+    Kalyan Pasupathy, PhD
+</h5>
+<p>
+    <!-- Department of Biomedical and Health Information Sciences<br> -->
+    University of Illinois Chicago, Chicago, IL, USA<br>
+</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="position-relative container-fluid cover-image mb-5"
+    style="background-image: url('./static/image/bg-0.jpg');">
+
+        <div class="col-md-11 mx-auto min-height-10 ">
+            <div class="row bg-ichiblue text-white p-3 mb-3">
+                <h5>
+                    We cordially invite you to submit your contribution to the 10<sup>th</sup> IEEE International Conference on
+                    Healthcare Informatics (ICHI 2022) that will take place June 11<sup>th</sup>-14<sup>th</sup>, 2022 in Rochester, MN, USA.
+                </h5>
+                <p>
+                    ICHI 2022 is a premier community forum concerned with the application of computer science, information
+                    science, data science, and informatics principles, as well as information technology, and communication
+                    science and technology to address problems and support research in healthcare, medicine, life science,
+                    public health, and everyday wellness. The conference highlights the most novel technical contributions to
+                    stakeholder-centered technology innovation for benefiting human health and the related social and ethical
+                    implications. ICHI 2022 will feature keynotes, a multi-track technical program including papers, posters,
+                    panels, workshops, tutorials, an industrial track, and a doctoral consortium.
+                </p>
+            </div>
+        </div>
+
+    
+</div>
+
+
+
+
+    </main>
+
+    <footer class="bg-ichiblue-light text-white">
+        <div class="container pt-4 pb-3">
+            <div class="row">
+                <div class="col-12 col-md-3 mb-3">
+                    IEEE ICHI 2022<br>
+                    ALL RIGHTS RESERVED.
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <h5>PAST YEARS</h5>
+                    <div class="row">
+                        <div class="col col-md-6">
+                            <ul class="list-unstyled text-small">
+                                <li><a class="link-white" href="https://ichi2021.institute4hi.org/">2021, Victoria
+                                        (CA)</a></li>
+                                <li><a class="link-white" href="https://ichi2020.de/">2020, Oldenburg (DE)</a></li>
+                                <li><a class="link-white" href="https://ewh.ieee.org/conf/ichi/2019/index.html">2019,
+                                        Xi'an (CN)</a></li>
+                                <li><a class="link-white"
+                                        href="https://phs.weill.cornell.edu/divisions/health_informatics/ieee_ichi.html">2018,
+                                        New York City (USA)</a></li>
+                                <li><a class="link-white" href="http://dml.cs.byu.edu/chs/ichi2017/">2017, Park City
+                                        (USA)</a></li>
+                            </ul>
+                        </div>
+                        <div class="col col-md-6">
+                            <ul class="list-unstyled text-small">
+                                <li><a class="link-white" href="https://www.ieee-ichi.org/2016/">2016, Chicago (USA)</a>
+                                </li>
+                                <li><a class="link-white" href="http://cs.utdallas.edu/ichi2015/">2015, Dallas (USA)</a>
+                                </li>
+                                <li><a class="link-white" href="http://ichi2014.di.univr.it/">2014, Verona (IT)</a></li>
+                                <li><a class="link-white" href="https://sites.google.com/site/2013ichi/">2013,
+                                        Philadelphia (USA)</a></li>
+                                <li><a class="link-white" href="https://sites.google.com/site/web2011ihi/">2012, Miami
+                                        (USA)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5>SOCIAL MEDIA</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-white" href="https://twitter.com/ichi2022">Twitter</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bg-ichiblue py-4">
+            <div class="container">
+                <div class="d-flex flex-row mb-3">
+                    <a class="footer_logo me-3" 
+                        href="https://www.ieee.org" target="_blank">
+                        <img height="35" src="./static/image/ieee-logo-white.svg" alt="IEEE">
+                    </a>
+                    <a class="footer_logo me-3" 
+                        href="https://www.computer.org" 
+                        target="_blank">
+                        <img height="35" src="./static/image/ieee-cs-logo-white.svg" alt="IEEE Computer Society">
+                    </a>
+                </div>
+    
+                <div class="d-flex flex-col lg:flex-row justify-content-between text-sm">
+                    <div>
+                        <span>© 2021-2022 IEEE. Sponsored by the IEEE Computer Society.</span>
+                    </div>
+                    <div>
+                        <a class="footer_link" href="https://www.ieee.org/security-privacy.html" target="_new">IEEE Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

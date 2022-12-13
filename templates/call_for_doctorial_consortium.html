@@ -1,0 +1,187 @@
+{% extends '_layout.html' %}
+
+{% block title %}
+Call for Doctoral Consortium
+{% endblock %}
+
+{% block content %}
+<div class="position-relative overflow-hidden pt-5 mb-5 text-center bg-light cover-image"
+    style="background-image: url('./static/image/rst-4.jpg');">
+    <div class="col-md-10 p-lg-5 mx-auto my-5 text-white min-height-12">
+        <h1 class="pt-5 display-4 fw-bold">
+            CALL FOR DOCTORAL CONSORTIUM
+        </h1>
+        <p class="lead fw-normal">
+            &nbsp;
+        </p>
+        <a class="btn btn-primary" href="{{ config.URL_EASYCHAIR_SUBMISSION }}">
+            SUBMISSION
+        </a>
+        <a class="btn btn-secondary" href="https://www.ieee.org/conferences/publishing/templates.html">
+            TEMPLATE
+        </a>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+</div>
+
+
+<div class="container">
+    <div class="mb-5">
+
+        <div class="col-md-10 p-lg-5 mx-auto min-height-10 ">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>IMPORTANT DATES</h2>
+                </div>
+
+                <div class="col-md-8">
+                    <ul>
+                        <li>Submission deadline: <b>EXTENDED TO January 31st, 2022</b> <del>January 21st, 2022</del></li>
+                        <li>Notification of acceptance: March 1st, 2022</li>
+                        <li>Camera-ready: March 30th, 2022</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="mb-5">
+        <div class="col-md-10 p-lg-5 mx-auto min-height-10">
+            <div class="row">
+
+                <h2>Doctoral Consortium</h2>
+                <p>
+                    The 2022 Doctoral Consortium invites doctoral students to submit abstracts on solving problems in
+                    healthcare, public health, and everyday wellness through the application of computer science,
+                    information science, information technology, and communication technology.
+                </p>
+                <p>
+                    The Doctoral Consortium offers an outstanding opportunity for doctoral students working on health
+                    informatics problems to discuss their work in progress and receive feedback and guidance from
+                    Consortium mentors.
+                </p>
+                <p>
+                    The Doctoral Consortium strongly encourages students from under-represented groups to participate,
+                    such as female and minority students.
+                </p>
+                <p>
+                    All doctoral students whose extended abstract is accepted will be scheduled for a rapid-fire talk
+                    where each participant has 5 minutes, with auto-advancing slides, to present a synopsis of their
+                    work. These rapid overviews will be followed by a poster session where participants and mentors can
+                    discuss research in greater detail. Selected participants may also be invited to give a longer oral
+                    presentation. The Doctoral Consortium will close with a panel or round-table discussion on topics
+                    relevant to doctoral students, such as dissertation development, job searching, or grant seeking.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="mb-5">
+
+        <div class="col-md-10 p-lg-5 mx-auto min-height-10 ">
+
+            <div class="row">
+                <h2>Submission</h2>
+
+                <p>
+                    To apply to the ICHI 2022 Doctoral Consortium, we request that each student submits a single PDF
+                    file with the following items:
+                </p>
+                <div class="col">
+
+                    <ul>
+                        <li>Cover Letter: A 1 page cover letter justifying what the student hopes to gain by attending
+                            the Doctoral Consortium.</li>
+                        <li>Extended Abstract: A 1 page abstract of a research project (ongoing or planned) in the IEEE
+                            Proceedings Format.</li>
+                    </ul>
+
+                    <p>
+                        Submissions to the Doctoral Consortium should be to
+                        <a target="_blank" href="{{ config.URL_EASYCHAIR_SUBMISSION }}">{{ config.URL_EASYCHAIR_SUBMISSION }}</a> choosing “Doctoral Consortium” as a track.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="mb-5 ">
+        <div class="col-md-10 p-lg-5 mx-auto min-height-10 ">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Reviewing</h2>
+                    <p>
+                        The Co-Chairs and independent reviewers will conduct the reviews based on quality of the proposal, relevance to ICHI, and perceived value of participation to the doctoral student.
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <h2>Publication</h2>
+                    <p>
+                        All accepted submissions will be published in IEEE Xplore and indexed in other Abstracting and Indexing (A&I) databases.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Travel Awards</h2>
+                    <p>
+                        It is foreseen that the selected doctoral students to be accepted for the Doctoral Consortium will receive a travel award to participate in the Conference. Details of the award and instructions on how to formally apply coming soon.
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <h2>Faculty Volunteers</h2>
+                    <p>
+                        Your participation is essential to making the Doctoral Consortium a success! If you are a faculty member and would like to serve as a mentor, please email the Doctoral Consortium Chair directly.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="mb-5">
+        <div class="col-md-10 p-lg-5 mx-auto min-height-10 ">
+            <div class="row">
+                <h2>Doctoral Consortium Chairs</h2>
+
+                <div class="col-md-4">
+                    {% include 'committees/gondy.html' %}
+                </div>
+                <div class="col-md-4">
+                    {% include 'committees/dezhi.html' %}
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% include '_invite.html' %}
+
+
+{% endblock %}

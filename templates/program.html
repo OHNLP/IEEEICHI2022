@@ -1,0 +1,413 @@
+{% extends '_layout.html' %}
+
+{% block title %}
+Program
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="position-relative overflow-hidden pt-5 mb-5 text-center bg-light cover-image"
+    style="background-image: url('./static/image/rst-3.jpg');">
+    <div class="col-md-10 p-lg-5 mx-auto my-5 text-white min-height-12">
+        <h1 class="pt-5 display-4 fw-bold">
+            PROGRAM
+        </h1>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+</div>
+
+<style>
+.room-a {
+    background-color: crimson;
+}
+
+.room-a {
+    background-color: aqua;
+}
+
+.room-c {
+    background-color: rgb(92, 181, 92);
+}
+
+.program-table {
+    width: 100%;
+    background-color: white;
+    table-layout: fixed;
+}
+
+.program-table tr {
+    height: 1px;
+}
+
+.program-table th {
+    text-align: center;
+}
+
+.program-table td {
+    font-size: 1em;
+}
+
+.th-room {
+    border-right: 1px solid #efefef;
+}
+
+.td-time {
+    height: 100%;
+    position: relative;
+}
+
+.time {
+    font-size: 0.8em;
+}
+
+.time-line {
+    border-left: 1px dotted #c7c7c7;
+    height: 2em;
+    margin-left: 2em;
+}
+
+.time-top {
+    position: absolute;
+    top: 0;
+}
+
+.time-top-down {
+    margin-top: 0.5em;
+}
+
+.time-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.time-bottom-down {
+    margin-bottom: -0.8em;
+}
+
+.td-slot {
+    width: calc((100% - 70px)/3);
+    height: 1px;
+    position: relative;
+}
+
+.slot {
+    width: 100%;
+    height: 100%;
+    line-height: 1em;
+}
+
+.slot-break {
+    font-size: 0.75em;
+    color: #777777;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.slot-blank-break {
+    font-size: 0.5em;
+}
+
+.slot-space {
+    text-decoration: none;
+}
+
+.slot-space:hover {
+    text-decoration: underline;
+}
+
+.slot-session {
+    border-top: 5px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    padding: 4px 0 8px 0;
+    margin-right: 2px;
+    font-size: 0.85em;
+    min-height: 5em;
+    text-align: center;
+    cursor: pointer;
+    overflow-wrap: break-word;
+}
+
+.slot-session-mini {
+    min-height: 3em !important;
+}
+
+.slot-session-a {
+    border-color: rgb(20, 105, 172);
+}
+
+.slot-session-a:hover {
+    background-color: rgba(20, 105, 172, 0.05);
+}
+
+.slot-session-h {
+    border-color: rgb(56, 183, 199);
+}
+
+.slot-session-h:hover {
+    background-color: rgba(56, 183, 199, 0.05);
+}
+
+.slot-session-s {
+    border-color: rgb(63, 157, 88);
+}
+
+.slot-session-s:hover {
+    background-color: rgba(63, 157, 88, 0.05);
+}
+
+.slot-session-w {
+    border-color: rgb(204, 194, 53);
+}
+
+.slot-session-w:hover {
+    background-color: rgba(204, 194, 53, 0.05);
+}
+
+.slot-session-d {
+    border-color: rgb(53, 121, 204);
+}
+
+.slot-session-d:hover {
+    background-color: rgba(53, 121, 204, 0.05);
+}
+
+.slot-session-t {
+    border-color: rgb(53, 204, 78);
+}
+
+.slot-session-t:hover {
+    background-color: rgba(53, 204, 78, 0.05);
+}
+
+.slot-session-p {
+    border-color: rgb(76, 49, 191);
+}
+
+.slot-session-p:hover {
+    background-color: rgba(76, 49, 191, 0.05);
+}
+
+.slot-session-k {
+    border-color: gold;
+}
+
+.slot-session-k:hover {
+    background-color: rgba(255, 217, 0, 0.05);
+}
+
+.slot-session-i {
+    border-color: rgb(199, 142, 45);
+}
+
+.slot-session-i:hover {
+    background-color: rgba(199, 142, 45, 0.05);
+}
+
+.slot-session-v {
+    border-color: rgb(154, 206, 59);
+}
+
+.slot-session-v:hover {
+    background-color: rgba(154, 206, 59, 0.05);
+}
+
+.slot-session-0 {
+    border-color: transparent;
+    cursor: default !important;
+}
+
+.session-list {
+    padding-left: 0;
+    list-style: disc;
+    list-style-position: inside;
+    margin-block-end: 0.5em;
+}
+
+.session-list-item {
+    padding-left: 0;
+}
+
+.session-dur-loc {
+    color: #333333;
+    font-size: .9em;
+}
+
+.session-paper {
+    padding-left: 0.5em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    /* border-left: 5px solid #d8d8d8; */
+    border-bottom: 1px solid #efefef;
+}
+
+.paper-title {
+    font-weight: bold;
+}
+
+.paper-authors {
+    font-style: italic;
+}
+
+.ichi-presenter {
+    font-weight: bold;
+}
+
+.session-details {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #efefef;
+}
+
+.session-info {
+    padding-top: 0;
+    padding-bottom: 1em;
+}
+.program-day-h3 {
+    border-top: 1px solid skyblue;
+    border-left: 5px solid skyblue;
+    padding: 0.5em 1em;
+}
+.p-title {
+    font-weight: bold;
+}
+
+.p-author {
+    font-size: 0.9em;
+}
+.txt-sm {
+    font-size: 0.85em;
+}
+
+.bg-poster {
+    background-color: steelblue;
+}
+.bg-virtual {
+    background-color: rgb(67, 176, 98);
+}
+
+.cme-icon {
+    /* position: absolute;
+    top: 7px;
+    left: 3px; */
+    font-size: 0.8em;
+}
+.cme-icon-text {
+    color: #515151;
+}
+
+.session-number {
+    font-size: 0.85em;
+    padding: 0 1px;
+    margin: 0 1px;
+    background-color: whitesmoke;
+}
+@media only screen and (max-width: 600px) {
+    .slot-small br {
+        display: none;
+    }
+    .slot-session b {
+        font-stretch: condensed;
+    }
+    .session-loc {
+        font-stretch: condensed;
+    }
+}
+</style>
+
+<div class="container">
+
+    <div class="col-md-10 p-lg-5 mb-5 mx-auto min-height-10 "
+        style="padding-top: 0 !important;">
+
+        <div class="row mb-5">
+            <div class="col">
+            <!-- <p>
+                Tentative schedule.
+            </p> -->
+            <h5>
+                <a href="./static/file/Full-Program.pdf"
+                    title="ICHI 2022 Full Program PDF File">
+                    <i class="far fa-file-pdf"></i>
+                    Full Program (PDF) 
+                    is available here!
+                </a>
+            </h5>
+            <p>
+                For scientific paper sessions, regular presentations  have 25 minutes (20 minutes presentation and 5 minutes QA) and short presentation <span class="badge bg-info">S</span> have 15 minutes (12 minutes presentation and 3 minutes QA).
+            </p>
+
+            <p>
+                For poster and demo session, please follow the <a href="./presenter_guidelines.html">Presenter Guidelines</a>.
+            </p>
+            <p>
+                Sessions with
+                <span style="margin: 0 5px;">
+                    <i class="fas fa-award"></i>
+                </span>
+                icon offer <a href="./cme.html">CME Credits</a>. 
+                People can attend keynotes and scientific sessions with that options and they will be invited by us to participate those sessions and claim 12 hours CME credits.
+            </p>
+
+            {% include '_program_day1.html' %}
+
+            {% include '_program_day2.html' %}
+
+            {% include '_program_day3.html' %}
+
+            {% include '_program_day4.html' %}
+
+            <h3>
+                Program Details
+            </h3>
+
+            {% include '_program_day1_detail.html' %}
+
+            {% include '_program_day2_detail.html' %}
+
+            {% include '_program_day3_detail.html' %}
+
+            {% include '_program_day4_detail.html' %}
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="modal fade" id="modal_session_detail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body" id="modal_session_info">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    var modal_session_info = null;
+    function show_session_info(sid) {
+        // get the session information
+        var session_info = $('#session-' + sid).html();
+        // update the modal
+        $('#modal_session_info').html(session_info);
+        // show modal
+        if (modal_session_info == null) {
+            modal_session_info = new bootstrap.Modal(document.getElementById('modal_session_detail'), {});
+        }
+        modal_session_info.show();
+    }
+</script>
+{% endblock %}

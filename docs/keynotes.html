@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Huan He">
+    <link rel="shortcut icon" href="./static/image/favicon.ico">
+    <title>ICHI 2022 | 
+Keynotes
+</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            min-height: 55rem;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            text-shadow: 2px 2px #000b3c;
+        }
+
+        .ichi-news li {
+            margin-bottom: 0.25em;
+        }
+        
+        .text-red {
+            color: red;
+        }
+
+        .text-shadow {
+            text-shadow: 1px 1px #000b3c;
+        }
+
+        .bio-noimg img {
+            display: none;
+        }
+
+        .bio-noimg h5 {
+            font-size: 1rem;
+        }
+
+        .bio-noimg p {
+        }
+
+        .bio-short img {
+            display: none;
+        }
+
+        .bio-short h5 {
+            font-size: 1rem;
+            display: inline;
+        }
+
+        .bio-short p {
+            font-size: 0.95rem;
+            display: inline;
+        }
+        .bio-short .people-profile-email {
+            display: none;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        .dropdown-menu {
+            border: 0;
+            border-radius: 0;
+        }
+
+        .cover-image {
+            background: no-repeat bottom;
+            background-size: cover;
+            /* background-size: 100% 100%; */
+        }
+
+        .min-height-10 {
+            min-height: 10rem !important;
+        }
+
+        .min-height-12 {
+            min-height: 12rem !important;
+        }
+
+        .bg-ichiblue {
+            background-color: rgb(0, 37, 82, 80%) !important;
+        }
+
+        .bg-ichiblue-light {
+            background-color: #335075 !important;
+        }
+
+        .people-profile-photo {
+            width: 100%;
+        }
+
+        .people-profile-email {
+            color: #777777;
+            font-size: .95em;
+        }
+
+        .link-white {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px dotted transparent;
+        }
+
+        .link-white:hover {
+            color: white;
+            border-bottom: 1px dotted white;
+        }
+
+        blockquote.twitter-tweet {
+            display: inline-block;
+            font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 16px;
+            border-color: #eee #ddd #bbb;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+            margin: 10px 5px;
+            padding: 0 16px 16px 16px;
+            max-width: 468px;
+        }
+
+        blockquote.twitter-tweet p {
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 20px;
+        }
+
+        blockquote.twitter-tweet a {
+            color: inherit;
+            font-weight: normal;
+            text-decoration: none;
+            outline: 0 none;
+        }
+
+        blockquote.twitter-tweet a:hover,
+        blockquote.twitter-tweet a:focus {
+            text-decoration: underline;
+        }
+
+        .fs-sm {
+            font-size: .8em;
+        }
+
+        .footer_logo img {
+            height: 25px;
+            width: auto;
+        }
+
+        .footer_link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer_link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .keynote_img {
+            float: right;
+            max-width: 200px; 
+            margin: 0 1.5em;
+        }
+
+        .sponsor-h4 {
+            font-weight: bolder;
+            color: #777777;
+            border-top: 1px solid #efefef;
+            padding-top: 1em;
+        }
+
+        .sponsor-logo {
+            display: block;
+            margin-left: 1em;
+            margin-right: 1em;
+            text-decoration: none;
+        }
+        .sponsor-logo img {
+            max-width: 100%;
+            max-height: 57px;
+        }
+
+        .lw-a {
+            width: 0.5em;
+            height: 1em;
+            margin-bottom: -0.2em;
+            display: inline-block;
+            /* background-image: url('./static/image/lw-a.png'); */
+            background-repeat: no-repeat;
+            background-size: 0.5em 1em;
+        }
+
+        .lw-b {
+            width: 0.5em;
+            height: 1em;
+            margin-bottom: -0.2em;
+            display: inline-block;
+            /* background-image: url('./static/image/lw-b.png'); */
+            background-repeat: no-repeat;
+            background-size: 0.5em 1em;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-ichiblue fixed-top" aria-label="Navbar ICHI 2022">
+            <div class="container">
+                <a class="navbar-brand" style="padding: 0;" href="./">
+                    <img src="./static/image/logo-white.png" style="height: 2em;" alt="IEEE ICHI 2022">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample07">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown"
+                                aria-expanded="false">Contribute</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown07">
+                                <li><a class="dropdown-item" href="./call_for_papers.html">Call for Papers</a></li>
+                                <li><a class="dropdown-item" href="./call_for_posters_and_demos.html">Call for Posters
+                                        and Demos</a></li>
+                                <li><a class="dropdown-item" href="./call_for_workshops.html">Call for Workshops</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./call_for_doctorial_consortium.html">Call for
+                                        Doctorial Consortium</a></li>
+                                <li><a class="dropdown-item" href="./call_for_industry_track.html">Call for Industry
+                                        Track</a></li>
+                                <li><a class="dropdown-item" href="./call_for_tutorials.html">Call for Tutorials</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./workshops.html">
+                                Workshops
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./attending.html">
+                                Attending
+                            </a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./attendance_grant.html">
+                                Attendance Grant
+                            </a>
+                        </li> -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./venue_and_logistics.html">
+                                Venue
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./program.html">
+                                Program
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./awards.html">
+                                Awards
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./presenter_guidelines.html">
+                                Presenters
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./keynotes.html">
+                                Keynotes
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./cme.html">
+                                CME Credits
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./call_for_sponsors.html">
+                                Sponsors
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./committees.html">
+                                Committees
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        
+<div class="position-relative overflow-hidden pt-5 mb-5 text-center bg-light cover-image"
+    style="background-image: url('./static/image/rst-5.jpg');">
+    <div class="col-md-10 p-lg-5 mx-auto my-5 text-white min-height-12">
+        <h1 class="pt-5 display-4 fw-bold">
+            KEYNOTES
+        </h1>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+</div>
+
+
+<div class="container">
+    <div class="mb-5">
+
+        <div class="col-md-10 p-lg-5 mx-auto min-height-10 ">
+
+            <div class="row mt-5 mb-5">
+
+                <div class="col">
+
+                    <br id="chunhua_weng" style="margin-bottom: 2em">
+                    <p>
+                        Analytics Track Keynote
+                    </p>
+
+                    <h2 class="mb-4">
+                        <a target="_blank" href="https://www.dbmi.columbia.edu/profile/chunhua-weng/">Chunhua Weng</a>
+                    </h2>
+
+                    <p>
+                        <img class="keynote_img"
+                            src="./static/image/keynote_chunhua_weng.jpg" 
+                            alt="Dr. Chunhua Weng">
+                    </p>
+
+                    <p>
+                        <i>Columbia University</i>
+                    </p>
+
+                    <p>
+                        Professor of Biomedical Informatics
+                    </p>
+
+                    <p>
+                        Dr. Chunhua Weng is a Professor of Biomedical Informatics at Columbia University and an elected fellow of both American College of Medical Informatics (ACMI) and International Academy of Health Sciences Informatics (IAHSI). She has been co-leading the Biomedical Informatics Resource for the Columbia CTSA (The Irving Institute for Clinical and Translational Science) since 2011. She is also an Associate Editor for Journal of Biomedical Informatics. Dr. Weng holds a Ph.D. in Biomedical and Health Informatics from University of Washington at Seattle. As an active researcher in the field of Clinical Research Informatics since 2000, Dr. Weng has published extensively on EHR data-driven optimization of clinical trial eligibility criteria, deep phenotyping for rare genetic disorders, EHR data quality assessment and data analytics, and text knowledge engineering using a variety of text (e.g., EHR narratives, PubMed abstracts and clinical trial summaries).
+                    </p>
+                     
+                </div>
+            </div>
+
+
+            <hr>
+
+
+            
+
+            <div class="row mt-5 mb-5">
+
+                <div class="col">
+
+                    <br id="rema_padman" style="margin-bottom: 2em">
+                    <p>
+                        System Track Keynote
+                    </p>
+
+                    <h2 class="mb-4">
+                        <a target="_blank" href="https://www.heinz.cmu.edu/faculty-research/profiles/padman-rema/">
+                            Rema Padman
+                        </a>
+                    </h2>
+                    
+
+                    <p>
+                        <img class="keynote_img"
+                            src="./static/image/keynote_rema_padman.jpg" 
+                            alt="Dr. Rema Padman">
+                    </p>
+
+                    <p>
+                        <i>Carnegie Mellon University</i>
+                    </p>
+
+                    <p>
+                        Trustees Professor Of Management Science And Healthcare Informatics
+                    </p>
+
+                    <p>Rema Padman is Trustees Professor of Management Science and Healthcare Informatics in the Heinz College of Information Systems and Public Policy at Carnegie Mellon University. She is also Thrust Leader of Healthcare Informatics Research at iLab and Research Area Director for Operations and Informatics at the Center for Health Analytics at the Heinz College, and Adjunct Professor in the Department of Biomedical Informatics at the University of Pittsburgh School of Medicine. She received B.Tech. in Chemical Engineering from the Indian Institute of Technology, Kanpur, India, PhD in Operations Research from the University of Texas at Austin and National Library of Medicine Senior Fellowship in Applied Informatics from The University of Pittsburgh School of Medicine. She is an elected Fellow of the American Medical Informatics Association (FAMIA).</p>
+
+                    <p>Dr. Padman's current research investigates healthcare informatics, analytics and operations, data-driven decision support, and process modeling and risk analysis, in the context of clinical and consumer-facing information technology interventions in healthcare delivery and management, such as e-health, m-health, chronic and infectious disease management, and workflow analysis. She has developed, applied, and evaluated models and methods drawn from optimization, machine learning, statistics and behavioral science for designing and investigating these IT interventions in the emergency, inpatient, ambulatory, and consumer self-health management settings.</p>
+
+                    <p>She has published extensively, served on editorial boards of major academic journals in Operations Research and Information Systems and advised healthcare informatics projects for provider, payer, pharmaceutical, consulting, and nonprofit organizations. She has also served on proposal review panels of US and international funding agencies and received funding for her research from federal agencies, healthcare organizations and foundations. She has received several Best Paper awards, the IBM Faculty Award, and Teaching Excellence awards. She has been a visiting professor at universities in the US and abroad, and keynote speaker at multiple conferences. Becker's Hospital Review recognized her as one of the top 110 women in MedTech in 2017 and she was nominated for the 2018 HIMSS Most Influential Women in Health IT Award.</p>
+
+                </div>
+            </div>
+
+
+
+            <hr>
+
+            <div class="row mt-5 mb-5">
+
+                <div class="col">
+
+                    <br id="ayse_p_gurses" style="margin-bottom: 2em">
+                    <p>
+                        Human Factors Track Keynote
+                    </p>
+
+                    <h2 class="mb-4">
+                        <a target="_blank" href="https://malonecenter.jhu.edu/people/ayse-p-gurses/">Ayse P. Gurses</a>
+                    </h2>
+
+                    <p>
+                        <img class="keynote_img"
+                            src="./static/image/keynote_ayse_gurses_2.jpg" 
+                            alt="Dr. Ayse P. Gurses">
+                    </p>
+
+                    <p>
+                        <i>Johns Hopkins University</i>
+                    </p>
+
+                    <p>
+                        Director, Center for Health Care Human Factors, Armstrong Institute, Johns Hopkins Medicine
+                        <br>
+                        Professor, Schools of Medicine, Bloomberg Public Health, Whiting Engineering, Johns Hopkins University
+                    </p>
+
+                    <p>Dr. Gurses is a globally recognized researcher, educator, and thought leader in infusing human factors engineering principles and methods into health care with the goal to design better and safer work environments and systems for improving patient safety and health care worker safety. She is the Founding Director of the Center for Health Care Human Factors at the Johns Hopkins Armstrong Institute and Professor in the Johns Hopkins University Schools of Medicine, Bloomberg Public Health and Whiting Engineering. She is the author of more than 100 peer-reviewed publications on human factors engineering, human-centered design, usability evaluation, patient safety and quality of care, and health care worker safety. </p>
+
+                    <p>Dr. Gurses’s current research efforts include, but not limited to human-centered and health-IT based clinical work system design, modeling cognitive and team work to improve diagnostic safety in emergency department, re-engineering complex work systems to reduce healthcare-associated infections, improving safe management air flow and aerosol generating procedures in the operating rooms to reduce infection transmission, improving safety of care transitions/ handoffs, and using human factors-based approaches to improve patient-care professional partnership for improving medication safety. Dr. Gurses has conducted research in a variety of care settings, including hospitals, ambulatory care, long-term care, and home care, as well as transitions of care between these settings. Her research program has been funded by the CDC, AHRQ, NIH, NSF, multiple foundations and private institutions. Dr. Gurses served as a member of an ad-hoc National Academies Committee on a 2-year effort that produced the 2022 report titled “Frameworks for Protecting Workers and the Public from Inhalation Hazards.” She also served as an Editor/ Scientific Editor for several journals in her field of expertise and currently is an Executive Committee Member of the Human Factors and Ergonomics Society.  Dr. Gurses received multiple awards for her contributions to the science of safety, including the Federation of Associations in Behavioral and Brain Sciences Foundation Award, Liberty Mutual Award on Safety, and the International Ergonomics Association Best Paper Award in Occupational Safety and Ergonomics.</p>
+
+                    <p>In addition to advancing the science of safety, Dr. Gurses’s health care human factors program has had a wide practical impact in the frontline clinical work. For example, when the Ebola epidemic hit in 2014, she led the Armstrong Institute’s efforts in partnering with the CDC to develop a web-based training to prepare health care professionals for potential Ebola cases by integrating human factors and industrial engineering, implementation science, and public health principles and methods with infection control and prevention and clinical expertise. Currently, as part of the CDC’s Project Firstline Initiative, and in collaboration with the JHU Applied Physics Laboratory, Dr. Gurses is leading a large-scale, multidisciplinary, innovative project aimed at improving infection prevention and control in the operating rooms using engineering-based approaches across the nation. </p>
+
+
+                </div>
+            </div>
+
+
+
+            <hr>
+
+
+            <div class="row mt-5 mb-5">
+
+                <div class="col">
+
+                    <br id="blackford_middleton" style="margin-bottom: 2em">
+                    <p>
+                        Industry Track Keynote
+                    </p>
+
+                    <h2 class="mb-4">
+                        <a target="_blank" href="https://www.linkedin.com/in/blackfordmiddleton/">
+                            Blackford Middleton
+                        </a>
+                    </h2>
+
+                    <p>
+                        <img class="keynote_img"
+                            src="./static/image/keynote_blackford_middleton.jpg" 
+                            alt="Dr. Blackford Middleton">
+                    </p>
+
+                    <p>
+                        Blackford Middleton is a physician & health informatics innovator committed to transformation...curing what ails healthcare. Previously, he was Chief Informatics and Innovation Officer at Apervita, Inc. Apervita provided a platform and marketplace for the execution and exchange of healthcare data and analytics. He served on the AHRQ ACTS Roadmap WG, and he is past Chair of the Steering Committee for the Patient-centered Clinical Decision Support Learning Network (www.pcorcds-ln.org). He is past Chairman of the Board of Directors of the American Medical Informatics Association (AMIA), the Healthcare Information Management and Systems Society (HIMSS), and the Computer-based Patient Record Institute (CPRI). 
+                    </p>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+    </main>
+
+    <footer class="bg-ichiblue-light text-white">
+        <div class="container pt-4 pb-3">
+            <div class="row">
+                <div class="col-12 col-md-3 mb-3">
+                    IEEE ICHI 2022<br>
+                    ALL RIGHTS RESERVED.
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <h5>PAST YEARS</h5>
+                    <div class="row">
+                        <div class="col col-md-6">
+                            <ul class="list-unstyled text-small">
+                                <li><a class="link-white" href="https://ichi2021.institute4hi.org/">2021, Victoria
+                                        (CA)</a></li>
+                                <li><a class="link-white" href="https://ichi2020.de/">2020, Oldenburg (DE)</a></li>
+                                <li><a class="link-white" href="https://ewh.ieee.org/conf/ichi/2019/index.html">2019,
+                                        Xi'an (CN)</a></li>
+                                <li><a class="link-white"
+                                        href="https://phs.weill.cornell.edu/divisions/health_informatics/ieee_ichi.html">2018,
+                                        New York City (USA)</a></li>
+                                <li><a class="link-white" href="http://dml.cs.byu.edu/chs/ichi2017/">2017, Park City
+                                        (USA)</a></li>
+                            </ul>
+                        </div>
+                        <div class="col col-md-6">
+                            <ul class="list-unstyled text-small">
+                                <li><a class="link-white" href="https://www.ieee-ichi.org/2016/">2016, Chicago (USA)</a>
+                                </li>
+                                <li><a class="link-white" href="http://cs.utdallas.edu/ichi2015/">2015, Dallas (USA)</a>
+                                </li>
+                                <li><a class="link-white" href="http://ichi2014.di.univr.it/">2014, Verona (IT)</a></li>
+                                <li><a class="link-white" href="https://sites.google.com/site/2013ichi/">2013,
+                                        Philadelphia (USA)</a></li>
+                                <li><a class="link-white" href="https://sites.google.com/site/web2011ihi/">2012, Miami
+                                        (USA)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5>SOCIAL MEDIA</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-white" href="https://twitter.com/ichi2022">Twitter</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bg-ichiblue py-4">
+            <div class="container">
+                <div class="d-flex flex-row mb-3">
+                    <a class="footer_logo me-3" 
+                        href="https://www.ieee.org" target="_blank">
+                        <img height="35" src="./static/image/ieee-logo-white.svg" alt="IEEE">
+                    </a>
+                    <a class="footer_logo me-3" 
+                        href="https://www.computer.org" 
+                        target="_blank">
+                        <img height="35" src="./static/image/ieee-cs-logo-white.svg" alt="IEEE Computer Society">
+                    </a>
+                </div>
+    
+                <div class="d-flex flex-col lg:flex-row justify-content-between text-sm">
+                    <div>
+                        <span>© 2021-2022 IEEE. Sponsored by the IEEE Computer Society.</span>
+                    </div>
+                    <div>
+                        <a class="footer_link" href="https://www.ieee.org/security-privacy.html" target="_new">IEEE Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

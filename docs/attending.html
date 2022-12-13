@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Huan He">
+    <link rel="shortcut icon" href="./static/image/favicon.ico">
+    <title>ICHI 2022 | 
+Attending
+</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            min-height: 55rem;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            text-shadow: 2px 2px #000b3c;
+        }
+
+        .ichi-news li {
+            margin-bottom: 0.25em;
+        }
+        
+        .text-red {
+            color: red;
+        }
+
+        .text-shadow {
+            text-shadow: 1px 1px #000b3c;
+        }
+
+        .bio-noimg img {
+            display: none;
+        }
+
+        .bio-noimg h5 {
+            font-size: 1rem;
+        }
+
+        .bio-noimg p {
+        }
+
+        .bio-short img {
+            display: none;
+        }
+
+        .bio-short h5 {
+            font-size: 1rem;
+            display: inline;
+        }
+
+        .bio-short p {
+            font-size: 0.95rem;
+            display: inline;
+        }
+        .bio-short .people-profile-email {
+            display: none;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        .dropdown-menu {
+            border: 0;
+            border-radius: 0;
+        }
+
+        .cover-image {
+            background: no-repeat bottom;
+            background-size: cover;
+            /* background-size: 100% 100%; */
+        }
+
+        .min-height-10 {
+            min-height: 10rem !important;
+        }
+
+        .min-height-12 {
+            min-height: 12rem !important;
+        }
+
+        .bg-ichiblue {
+            background-color: rgb(0, 37, 82, 80%) !important;
+        }
+
+        .bg-ichiblue-light {
+            background-color: #335075 !important;
+        }
+
+        .people-profile-photo {
+            width: 100%;
+        }
+
+        .people-profile-email {
+            color: #777777;
+            font-size: .95em;
+        }
+
+        .link-white {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px dotted transparent;
+        }
+
+        .link-white:hover {
+            color: white;
+            border-bottom: 1px dotted white;
+        }
+
+        blockquote.twitter-tweet {
+            display: inline-block;
+            font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 16px;
+            border-color: #eee #ddd #bbb;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+            margin: 10px 5px;
+            padding: 0 16px 16px 16px;
+            max-width: 468px;
+        }
+
+        blockquote.twitter-tweet p {
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 20px;
+        }
+
+        blockquote.twitter-tweet a {
+            color: inherit;
+            font-weight: normal;
+            text-decoration: none;
+            outline: 0 none;
+        }
+
+        blockquote.twitter-tweet a:hover,
+        blockquote.twitter-tweet a:focus {
+            text-decoration: underline;
+        }
+
+        .fs-sm {
+            font-size: .8em;
+        }
+
+        .footer_logo img {
+            height: 25px;
+            width: auto;
+        }
+
+        .footer_link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer_link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .keynote_img {
+            float: right;
+            max-width: 200px; 
+            margin: 0 1.5em;
+        }
+
+        .sponsor-h4 {
+            font-weight: bolder;
+            color: #777777;
+            border-top: 1px solid #efefef;
+            padding-top: 1em;
+        }
+
+        .sponsor-logo {
+            display: block;
+            margin-left: 1em;
+            margin-right: 1em;
+            text-decoration: none;
+        }
+        .sponsor-logo img {
+            max-width: 100%;
+            max-height: 57px;
+        }
+
+        .lw-a {
+            width: 0.5em;
+            height: 1em;
+            margin-bottom: -0.2em;
+            display: inline-block;
+            /* background-image: url('./static/image/lw-a.png'); */
+            background-repeat: no-repeat;
+            background-size: 0.5em 1em;
+        }
+
+        .lw-b {
+            width: 0.5em;
+            height: 1em;
+            margin-bottom: -0.2em;
+            display: inline-block;
+            /* background-image: url('./static/image/lw-b.png'); */
+            background-repeat: no-repeat;
+            background-size: 0.5em 1em;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-ichiblue fixed-top" aria-label="Navbar ICHI 2022">
+            <div class="container">
+                <a class="navbar-brand" style="padding: 0;" href="./">
+                    <img src="./static/image/logo-white.png" style="height: 2em;" alt="IEEE ICHI 2022">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample07">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown"
+                                aria-expanded="false">Contribute</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown07">
+                                <li><a class="dropdown-item" href="./call_for_papers.html">Call for Papers</a></li>
+                                <li><a class="dropdown-item" href="./call_for_posters_and_demos.html">Call for Posters
+                                        and Demos</a></li>
+                                <li><a class="dropdown-item" href="./call_for_workshops.html">Call for Workshops</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./call_for_doctorial_consortium.html">Call for
+                                        Doctorial Consortium</a></li>
+                                <li><a class="dropdown-item" href="./call_for_industry_track.html">Call for Industry
+                                        Track</a></li>
+                                <li><a class="dropdown-item" href="./call_for_tutorials.html">Call for Tutorials</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./workshops.html">
+                                Workshops
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./attending.html">
+                                Attending
+                            </a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./attendance_grant.html">
+                                Attendance Grant
+                            </a>
+                        </li> -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./venue_and_logistics.html">
+                                Venue
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./program.html">
+                                Program
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./awards.html">
+                                Awards
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./presenter_guidelines.html">
+                                Presenters
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./keynotes.html">
+                                Keynotes
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./cme.html">
+                                CME Credits
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./call_for_sponsors.html">
+                                Sponsors
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./committees.html">
+                                Committees
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        
+<div class="position-relative overflow-hidden pt-5 mb-5 text-center bg-light cover-image"
+    style="background-image: url('./static/image/rst-1.jpg');">
+    <div class="col-md-10 p-lg-5 mx-auto my-5 text-white min-height-12">
+        <h1 class="pt-5 display-4 fw-bold">
+            CONFERENCE REGISTRATION
+        </h1>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+</div>
+
+
+<div class="container">
+
+    <div class="row mb-5">
+
+        <div class="col-md-10 mx-auto min-height-10 ">
+            
+            <h2>
+                Attendance Grant
+            </h2>
+
+            <h4 class="mb-4">
+                Eligibility
+            </h4>
+            
+            <p>
+                IEEE ICHI 2022 offer a limited amount of grant to support potential attendees to attend and present their accepted
+                papers or posters.
+            </p>
+            
+            <p>
+                To be eligible for an award, applicants must be: Enrolled in a degree-seeking undergraduate program or graduate
+                program from a regionally accredited institution of higher learning.
+            
+            </p>
+            
+            <h4 class="mb-4">
+                How to Apply
+            </h4>
+            
+            
+            <p>
+                Please send the following information to IEEE ICHI 2022 Financial Chair (Dr. Che Ngufor, <a target="_blank" href="mailto:ngufor.che@mayo.edu">ngufor.che@mayo.edu</a> ):
+            <ul>
+                <li>Contact & demographic information</li>
+                <li>Short essay questions (1-2 paragraphs) about your career and learning objectives</li>
+                <li>Your academic transcript</li>
+                <li>A statement of support from a supervisor or colleague</li>
+            
+            </ul>
+            </p>
+            
+            <p>
+                The statement of support may be completed by a current or former supervisor, senior author on the paper/abstract,
+                professor, volunteer colleague, or other professional contacts.
+            </p>
+                 
+
+
+            <h2>
+                Registration
+            </h2>
+
+            <p>
+                IEEE ICHI 2022 conference registration website is now open. 
+                <a target="_blank" href="https://cvent.me/N3xQZy">Register Now</a>
+            </p>
+
+            <br id="virtual_on_demand">
+            <p class="mt-4">
+                <b>Virtual-on-demand Registration (For Virtual-on-demand Participation Only)</b>
+                <br>
+                This registration includes virtual participation into scientific sessions.
+            </p>
+            
+            <table class="table">
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Virtual-on-demand Registration Fee</th>
+                </tr>
+                <tr>
+                    <th>IEEE/IHI Member</th>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <th>IEEE/IHI Student Member</th>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <th>IEEE Life Member</th>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <th>Non-Member</th>
+                    <td>$100.00</td>
+                </tr>
+                <tr>
+                    <th>Student Non-Member</th>
+                    <td>$100.00</td>
+                </tr>
+            </table>
+
+            <br id="author">
+            <p class="mt-4">
+                <b>Author Registration for registering a paper:</b>
+                <br>
+                This registration includes proceedings, breakfasts, coffee Breaks, lunches, and banquet.
+            </p>
+
+            <p>
+                The author registration period for IEEE ICHI 2022 lasts until April 7, 2022.
+                <!-- Afterwards the standard registration fees apply.  -->
+                All registration fees will be charged in USD dollars.
+                Become a member of Institute for Healthcare Informatics (IHI) for conference registration discount.
+                <a target="_blank" 
+                    href="https://institute4hi.org/wp/membership-join/">
+                    Institute for Healthcare Informatics Member Enrollment
+                </a>.
+            </p>
+
+            <table class="table">
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Author Registration Fee by April 7, 2022</th>
+                </tr>
+                <tr>
+                    <th>IEEE/IHI Member</th>
+                    <td>$850.00</td>
+                </tr>
+                <tr>
+                    <th>IEEE/IHI Student Member</th>
+                    <td>$850.00</td>
+                </tr>
+                <tr>
+                    <th>IEEE Life Member</th>
+                    <td>$850.00</td>
+                </tr>
+                <tr>
+                    <th>Non-Member</th>
+                    <td>$1,020.00</td>
+                </tr>
+                <tr>
+                    <th>Student Non-Member</th>
+                    <td>$1,020.00</td>
+                </tr>
+            </table>
+
+
+            <br id="non_author">
+            <p class="mt-4">
+                <b>Conference Registration:</b>
+                <br>
+                Conference registration for non-authors and authors not registering a paper. This registration includes proceedings, breakfasts, coffee Breaks, lunches, and banquet.
+            </p>
+
+            <table class="table">
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Early Registration Fee</th>
+                    <th>After May 15, 2022</th>
+                </tr>
+                <tr>
+                    <th>IEEE/IHI Member</th>
+                    <td>$850.00</td>
+                    <td>$900.00</td>
+                </tr>
+                <tr>
+                    <th>IEEE/IHI Student Member</th>
+                    <td>$595.00</td>
+                    <td>$630.00</td>
+                </tr>
+                <tr>
+                    <th>IEEE Life Member</th>
+                    <td>$470.00</td>
+                    <td>$495.00</td>
+                </tr>
+                <tr>
+                    <th>Non-Member</th>
+                    <td>$1,020.00</td>
+                    <td>$1,080.00</td>
+                </tr>
+                <tr>
+                    <th>Student Non-Member</th>
+                    <td>$715.00</td>
+                    <td>$760.00</td>
+                </tr>
+            </table>
+
+
+            <br id="one_day">
+            <p class="mt-4">
+                <b>One-Day Registration (For Workshops and Tutorials Only, select One-Day Registration):</b>
+                <br>
+                This registration includes proceedings, breakfast, coffee breaks, and lunch.
+            </p>
+
+            <table class="table">
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Early Registration Fee</th>
+                    <th>After May 15, 2022</th>
+                </tr>
+                <tr>
+                    <th>IEEE/IHI Member</th>
+                    <td>$250.00</td>
+                    <td>$300.00</td>
+                </tr>
+                <tr>
+                    <th>IEEE/IHI Student Member</th>
+                    <td>$175.00</td>
+                    <td>$210.00</td>
+                </tr>
+                <tr>
+                    <th>IEEE Life Member</th>
+                    <td>$140.00</td>
+                    <td>$170.00</td>
+                </tr>
+                <tr>
+                    <th>Non-Member</th>
+                    <td>$300.00</td>
+                    <td>$360.00</td>
+                </tr>
+                <tr>
+                    <th>Student Non-Member</th>
+                    <td>$210.00</td>
+                    <td>$255.00</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="col-md-10 mx-auto min-height-10 mt-5">
+
+            <hr>
+            <br>
+            <br>
+
+            <h2>
+    Visa Invitation Letter
+</h2>
+
+<p class="mb-4">
+    As part of the publication requirements, it is a mandatory requirement that you attend the conference in person to present the paper and discuss your work. Please make the necessary travel arrangements and visa applications as early as possible to be able to present your paper and lead the subsequent technical discussions.
+</p>
+
+<p class="mb-4">
+    For invitation letters required for visa processing, 
+    please contact Dr. Huan He by email to: <a target="_blank" href="mailto:He.Huan@mayo.edu">He.Huan@mayo.edu</a>
+</p>
+
+        </div>
+    </div>
+
+</div>
+
+
+    </main>
+
+    <footer class="bg-ichiblue-light text-white">
+        <div class="container pt-4 pb-3">
+            <div class="row">
+                <div class="col-12 col-md-3 mb-3">
+                    IEEE ICHI 2022<br>
+                    ALL RIGHTS RESERVED.
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <h5>PAST YEARS</h5>
+                    <div class="row">
+                        <div class="col col-md-6">
+                            <ul class="list-unstyled text-small">
+                                <li><a class="link-white" href="https://ichi2021.institute4hi.org/">2021, Victoria
+                                        (CA)</a></li>
+                                <li><a class="link-white" href="https://ichi2020.de/">2020, Oldenburg (DE)</a></li>
+                                <li><a class="link-white" href="https://ewh.ieee.org/conf/ichi/2019/index.html">2019,
+                                        Xi'an (CN)</a></li>
+                                <li><a class="link-white"
+                                        href="https://phs.weill.cornell.edu/divisions/health_informatics/ieee_ichi.html">2018,
+                                        New York City (USA)</a></li>
+                                <li><a class="link-white" href="http://dml.cs.byu.edu/chs/ichi2017/">2017, Park City
+                                        (USA)</a></li>
+                            </ul>
+                        </div>
+                        <div class="col col-md-6">
+                            <ul class="list-unstyled text-small">
+                                <li><a class="link-white" href="https://www.ieee-ichi.org/2016/">2016, Chicago (USA)</a>
+                                </li>
+                                <li><a class="link-white" href="http://cs.utdallas.edu/ichi2015/">2015, Dallas (USA)</a>
+                                </li>
+                                <li><a class="link-white" href="http://ichi2014.di.univr.it/">2014, Verona (IT)</a></li>
+                                <li><a class="link-white" href="https://sites.google.com/site/2013ichi/">2013,
+                                        Philadelphia (USA)</a></li>
+                                <li><a class="link-white" href="https://sites.google.com/site/web2011ihi/">2012, Miami
+                                        (USA)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h5>SOCIAL MEDIA</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-white" href="https://twitter.com/ichi2022">Twitter</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bg-ichiblue py-4">
+            <div class="container">
+                <div class="d-flex flex-row mb-3">
+                    <a class="footer_logo me-3" 
+                        href="https://www.ieee.org" target="_blank">
+                        <img height="35" src="./static/image/ieee-logo-white.svg" alt="IEEE">
+                    </a>
+                    <a class="footer_logo me-3" 
+                        href="https://www.computer.org" 
+                        target="_blank">
+                        <img height="35" src="./static/image/ieee-cs-logo-white.svg" alt="IEEE Computer Society">
+                    </a>
+                </div>
+    
+                <div class="d-flex flex-col lg:flex-row justify-content-between text-sm">
+                    <div>
+                        <span>© 2021-2022 IEEE. Sponsored by the IEEE Computer Society.</span>
+                    </div>
+                    <div>
+                        <a class="footer_link" href="https://www.ieee.org/security-privacy.html" target="_new">IEEE Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
